@@ -12,7 +12,7 @@
 		10DF5AD61C507E0600519A70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AD51C507E0600519A70 /* ViewController.m */; };
 		10DF5AD91C507E0600519A70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DF5AD71C507E0600519A70 /* Main.storyboard */; };
 		10DF5ADC1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5ADA1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld */; };
-		10DF5ADE1C507E0600519A70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DF5ADD1C507E0600519A70 /* Assets.xcassets */; };
+		10DF5ADE1C507E0600519A70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DF5ADD1C507E0600519A70 /* Images.xcassets */; };
 		10DF5AE11C507E0600519A70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DF5ADF1C507E0600519A70 /* LaunchScreen.storyboard */; };
 		10DF5AEC1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AEB1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m */; };
 		10DF5AF71C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AF61C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m */; };
@@ -44,7 +44,7 @@
 		10DF5AD51C507E0600519A70 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		10DF5AD81C507E0600519A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10DF5ADB1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VirginiaVacuums_Obj_c.xcdatamodel; sourceTree = "<group>"; };
-		10DF5ADD1C507E0600519A70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10DF5ADD1C507E0600519A70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		10DF5AE01C507E0600519A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10DF5AE21C507E0600519A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10DF5AE71C507E0600519A70 /* VirginiaVacuums-Obj-cTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VirginiaVacuums-Obj-cTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +108,7 @@
 				10DF5AD41C507E0600519A70 /* ViewController.h */,
 				10DF5AD51C507E0600519A70 /* ViewController.m */,
 				10DF5AD71C507E0600519A70 /* Main.storyboard */,
-				10DF5ADD1C507E0600519A70 /* Assets.xcassets */,
+				10DF5ADD1C507E0600519A70 /* Images.xcassets */,
 				10DF5ADF1C507E0600519A70 /* LaunchScreen.storyboard */,
 				10DF5AE21C507E0600519A70 /* Info.plist */,
 				10DF5ADA1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld */,
@@ -247,7 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DF5AE11C507E0600519A70 /* LaunchScreen.storyboard in Resources */,
-				10DF5ADE1C507E0600519A70 /* Assets.xcassets in Resources */,
+				10DF5ADE1C507E0600519A70 /* Images.xcassets in Resources */,
 				10DF5AD91C507E0600519A70 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
