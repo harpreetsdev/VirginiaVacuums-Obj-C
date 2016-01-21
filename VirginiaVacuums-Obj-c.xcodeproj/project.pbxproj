@@ -103,15 +103,9 @@
 		10DF5ACD1C507E0600519A70 /* VirginiaVacuums-Obj-c */ = {
 			isa = PBXGroup;
 			children = (
-				10DF5AD11C507E0600519A70 /* AppDelegate.h */,
-				10DF5AD21C507E0600519A70 /* AppDelegate.m */,
-				10DF5AD41C507E0600519A70 /* ViewController.h */,
-				10DF5AD51C507E0600519A70 /* ViewController.m */,
-				10DF5AD71C507E0600519A70 /* Main.storyboard */,
-				10DF5ADD1C507E0600519A70 /* Images.xcassets */,
-				10DF5ADF1C507E0600519A70 /* LaunchScreen.storyboard */,
-				10DF5AE21C507E0600519A70 /* Info.plist */,
-				10DF5ADA1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld */,
+				5E8FEFA01C513F9600B5B4AC /* Utilities */,
+				5E8FEF9E1C513F2E00B5B4AC /* Controllers */,
+				5E8FEF9F1C513F4D00B5B4AC /* Views */,
 				10DF5ACE1C507E0600519A70 /* Supporting Files */,
 			);
 			path = "VirginiaVacuums-Obj-c";
@@ -120,7 +114,11 @@
 		10DF5ACE1C507E0600519A70 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				10DF5AE21C507E0600519A70 /* Info.plist */,
+				10DF5AD11C507E0600519A70 /* AppDelegate.h */,
+				10DF5AD21C507E0600519A70 /* AppDelegate.m */,
 				10DF5ACF1C507E0600519A70 /* main.m */,
+				10DF5ADD1C507E0600519A70 /* Images.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +139,32 @@
 				10DF5AF81C507E0600519A70 /* Info.plist */,
 			);
 			path = "VirginiaVacuums-Obj-cUITests";
+			sourceTree = "<group>";
+		};
+		5E8FEF9E1C513F2E00B5B4AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				10DF5AD41C507E0600519A70 /* ViewController.h */,
+				10DF5AD51C507E0600519A70 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5E8FEF9F1C513F4D00B5B4AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10DF5AD71C507E0600519A70 /* Main.storyboard */,
+				10DF5ADF1C507E0600519A70 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5E8FEFA01C513F9600B5B4AC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				10DF5ADA1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,6 +526,7 @@
 				10DF5AFD1C507E0600519A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10DF5AFE1C507E0600519A70 /* Build configuration list for PBXNativeTarget "VirginiaVacuums-Obj-cTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +535,7 @@
 				10DF5B001C507E0600519A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10DF5B011C507E0600519A70 /* Build configuration list for PBXNativeTarget "VirginiaVacuums-Obj-cUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +544,7 @@
 				10DF5B031C507E0600519A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
