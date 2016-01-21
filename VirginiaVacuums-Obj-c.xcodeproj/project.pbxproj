@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10DF5AD01C507E0600519A70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5ACF1C507E0600519A70 /* main.m */; };
+		10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AD21C507E0600519A70 /* AppDelegate.m */; };
+		10DF5AD61C507E0600519A70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AD51C507E0600519A70 /* ViewController.m */; };
+		10DF5AD91C507E0600519A70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DF5AD71C507E0600519A70 /* Main.storyboard */; };
+		10DF5ADC1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5ADA1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld */; };
+		10DF5ADE1C507E0600519A70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DF5ADD1C507E0600519A70 /* Assets.xcassets */; };
+		10DF5AE11C507E0600519A70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DF5ADF1C507E0600519A70 /* LaunchScreen.storyboard */; };
+		10DF5AEC1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AEB1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m */; };
+		10DF5AF71C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AF61C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10DF5AE81C507E0600519A70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10DF5AC31C507E0600519A70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10DF5ACA1C507E0600519A70;
+			remoteInfo = "VirginiaVacuums-Obj-c";
+		};
+		10DF5AF31C507E0600519A70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10DF5AC31C507E0600519A70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10DF5ACA1C507E0600519A70;
+			remoteInfo = "VirginiaVacuums-Obj-c";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10DF5ACB1C507E0600519A70 /* VirginiaVacuums-Obj-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VirginiaVacuums-Obj-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10DF5ACF1C507E0600519A70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		10DF5AD11C507E0600519A70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		10DF5AD21C507E0600519A70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		10DF5AD41C507E0600519A70 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		10DF5AD51C507E0600519A70 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		10DF5AD81C507E0600519A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10DF5ADB1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VirginiaVacuums_Obj_c.xcdatamodel; sourceTree = "<group>"; };
+		10DF5ADD1C507E0600519A70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10DF5AE01C507E0600519A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10DF5AE21C507E0600519A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10DF5AE71C507E0600519A70 /* VirginiaVacuums-Obj-cTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VirginiaVacuums-Obj-cTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10DF5AEB1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VirginiaVacuums_Obj_cTests.m; sourceTree = "<group>"; };
+		10DF5AED1C507E0600519A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10DF5AF21C507E0600519A70 /* VirginiaVacuums-Obj-cUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VirginiaVacuums-Obj-cUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10DF5AF61C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VirginiaVacuums_Obj_cUITests.m; sourceTree = "<group>"; };
+		10DF5AF81C507E0600519A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10DF5AC81C507E0600519A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10DF5AE41C507E0600519A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10DF5AEF1C507E0600519A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10DF5AC21C507E0600519A70 = {
+			isa = PBXGroup;
+			children = (
+				10DF5ACD1C507E0600519A70 /* VirginiaVacuums-Obj-c */,
+				10DF5AEA1C507E0600519A70 /* VirginiaVacuums-Obj-cTests */,
+				10DF5AF51C507E0600519A70 /* VirginiaVacuums-Obj-cUITests */,
+				10DF5ACC1C507E0600519A70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10DF5ACC1C507E0600519A70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10DF5ACB1C507E0600519A70 /* VirginiaVacuums-Obj-c.app */,
+				10DF5AE71C507E0600519A70 /* VirginiaVacuums-Obj-cTests.xctest */,
+				10DF5AF21C507E0600519A70 /* VirginiaVacuums-Obj-cUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10DF5ACD1C507E0600519A70 /* VirginiaVacuums-Obj-c */ = {
+			isa = PBXGroup;
+			children = (
+				10DF5AD11C507E0600519A70 /* AppDelegate.h */,
+				10DF5AD21C507E0600519A70 /* AppDelegate.m */,
+				10DF5AD41C507E0600519A70 /* ViewController.h */,
+				10DF5AD51C507E0600519A70 /* ViewController.m */,
+				10DF5AD71C507E0600519A70 /* Main.storyboard */,
+				10DF5ADD1C507E0600519A70 /* Assets.xcassets */,
+				10DF5ADF1C507E0600519A70 /* LaunchScreen.storyboard */,
+				10DF5AE21C507E0600519A70 /* Info.plist */,
+				10DF5ADA1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld */,
+				10DF5ACE1C507E0600519A70 /* Supporting Files */,
+			);
+			path = "VirginiaVacuums-Obj-c";
+			sourceTree = "<group>";
+		};
+		10DF5ACE1C507E0600519A70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10DF5ACF1C507E0600519A70 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10DF5AEA1C507E0600519A70 /* VirginiaVacuums-Obj-cTests */ = {
+			isa = PBXGroup;
+			children = (
+				10DF5AEB1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m */,
+				10DF5AED1C507E0600519A70 /* Info.plist */,
+			);
+			path = "VirginiaVacuums-Obj-cTests";
+			sourceTree = "<group>";
+		};
+		10DF5AF51C507E0600519A70 /* VirginiaVacuums-Obj-cUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10DF5AF61C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m */,
+				10DF5AF81C507E0600519A70 /* Info.plist */,
+			);
+			path = "VirginiaVacuums-Obj-cUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10DF5ACA1C507E0600519A70 /* VirginiaVacuums-Obj-c */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10DF5AFB1C507E0600519A70 /* Build configuration list for PBXNativeTarget "VirginiaVacuums-Obj-c" */;
+			buildPhases = (
+				10DF5AC71C507E0600519A70 /* Sources */,
+				10DF5AC81C507E0600519A70 /* Frameworks */,
+				10DF5AC91C507E0600519A70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VirginiaVacuums-Obj-c";
+			productName = "VirginiaVacuums-Obj-c";
+			productReference = 10DF5ACB1C507E0600519A70 /* VirginiaVacuums-Obj-c.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10DF5AE61C507E0600519A70 /* VirginiaVacuums-Obj-cTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10DF5AFE1C507E0600519A70 /* Build configuration list for PBXNativeTarget "VirginiaVacuums-Obj-cTests" */;
+			buildPhases = (
+				10DF5AE31C507E0600519A70 /* Sources */,
+				10DF5AE41C507E0600519A70 /* Frameworks */,
+				10DF5AE51C507E0600519A70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10DF5AE91C507E0600519A70 /* PBXTargetDependency */,
+			);
+			name = "VirginiaVacuums-Obj-cTests";
+			productName = "VirginiaVacuums-Obj-cTests";
+			productReference = 10DF5AE71C507E0600519A70 /* VirginiaVacuums-Obj-cTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10DF5AF11C507E0600519A70 /* VirginiaVacuums-Obj-cUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10DF5B011C507E0600519A70 /* Build configuration list for PBXNativeTarget "VirginiaVacuums-Obj-cUITests" */;
+			buildPhases = (
+				10DF5AEE1C507E0600519A70 /* Sources */,
+				10DF5AEF1C507E0600519A70 /* Frameworks */,
+				10DF5AF01C507E0600519A70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10DF5AF41C507E0600519A70 /* PBXTargetDependency */,
+			);
+			name = "VirginiaVacuums-Obj-cUITests";
+			productName = "VirginiaVacuums-Obj-cUITests";
+			productReference = 10DF5AF21C507E0600519A70 /* VirginiaVacuums-Obj-cUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10DF5AC31C507E0600519A70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "HARPREET SINGH";
+				TargetAttributes = {
+					10DF5ACA1C507E0600519A70 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					10DF5AE61C507E0600519A70 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 10DF5ACA1C507E0600519A70;
+					};
+					10DF5AF11C507E0600519A70 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 10DF5ACA1C507E0600519A70;
+					};
+				};
+			};
+			buildConfigurationList = 10DF5AC61C507E0600519A70 /* Build configuration list for PBXProject "VirginiaVacuums-Obj-c" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10DF5AC21C507E0600519A70;
+			productRefGroup = 10DF5ACC1C507E0600519A70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10DF5ACA1C507E0600519A70 /* VirginiaVacuums-Obj-c */,
+				10DF5AE61C507E0600519A70 /* VirginiaVacuums-Obj-cTests */,
+				10DF5AF11C507E0600519A70 /* VirginiaVacuums-Obj-cUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10DF5AC91C507E0600519A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DF5AE11C507E0600519A70 /* LaunchScreen.storyboard in Resources */,
+				10DF5ADE1C507E0600519A70 /* Assets.xcassets in Resources */,
+				10DF5AD91C507E0600519A70 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10DF5AE51C507E0600519A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10DF5AF01C507E0600519A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10DF5AC71C507E0600519A70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DF5AD61C507E0600519A70 /* ViewController.m in Sources */,
+				10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */,
+				10DF5AD01C507E0600519A70 /* main.m in Sources */,
+				10DF5ADC1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10DF5AE31C507E0600519A70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DF5AEC1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10DF5AEE1C507E0600519A70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DF5AF71C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10DF5AE91C507E0600519A70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10DF5ACA1C507E0600519A70 /* VirginiaVacuums-Obj-c */;
+			targetProxy = 10DF5AE81C507E0600519A70 /* PBXContainerItemProxy */;
+		};
+		10DF5AF41C507E0600519A70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10DF5ACA1C507E0600519A70 /* VirginiaVacuums-Obj-c */;
+			targetProxy = 10DF5AF31C507E0600519A70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10DF5AD71C507E0600519A70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10DF5AD81C507E0600519A70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10DF5ADF1C507E0600519A70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10DF5AE01C507E0600519A70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10DF5AF91C507E0600519A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10DF5AFA1C507E0600519A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10DF5AFC1C507E0600519A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "VirginiaVacuums-Obj-c/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HSR.VirginiaVacuums-Obj-c";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		10DF5AFD1C507E0600519A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "VirginiaVacuums-Obj-c/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HSR.VirginiaVacuums-Obj-c";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		10DF5AFF1C507E0600519A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "VirginiaVacuums-Obj-cTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HSR.VirginiaVacuums-Obj-cTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirginiaVacuums-Obj-c.app/VirginiaVacuums-Obj-c";
+			};
+			name = Debug;
+		};
+		10DF5B001C507E0600519A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "VirginiaVacuums-Obj-cTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HSR.VirginiaVacuums-Obj-cTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirginiaVacuums-Obj-c.app/VirginiaVacuums-Obj-c";
+			};
+			name = Release;
+		};
+		10DF5B021C507E0600519A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "VirginiaVacuums-Obj-cUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HSR.VirginiaVacuums-Obj-cUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "VirginiaVacuums-Obj-c";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		10DF5B031C507E0600519A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "VirginiaVacuums-Obj-cUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HSR.VirginiaVacuums-Obj-cUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "VirginiaVacuums-Obj-c";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10DF5AC61C507E0600519A70 /* Build configuration list for PBXProject "VirginiaVacuums-Obj-c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10DF5AF91C507E0600519A70 /* Debug */,
+				10DF5AFA1C507E0600519A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10DF5AFB1C507E0600519A70 /* Build configuration list for PBXNativeTarget "VirginiaVacuums-Obj-c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10DF5AFC1C507E0600519A70 /* Debug */,
+				10DF5AFD1C507E0600519A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		10DF5AFE1C507E0600519A70 /* Build configuration list for PBXNativeTarget "VirginiaVacuums-Obj-cTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10DF5AFF1C507E0600519A70 /* Debug */,
+				10DF5B001C507E0600519A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		10DF5B011C507E0600519A70 /* Build configuration list for PBXNativeTarget "VirginiaVacuums-Obj-cUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10DF5B021C507E0600519A70 /* Debug */,
+				10DF5B031C507E0600519A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		10DF5ADA1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				10DF5ADB1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodel */,
+			);
+			currentVersion = 10DF5ADB1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodel */;
+			path = VirginiaVacuums_Obj_c.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 10DF5AC31C507E0600519A70 /* Project object */;
+}
