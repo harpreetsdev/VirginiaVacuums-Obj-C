@@ -16,6 +16,8 @@
 		10DF5AE11C507E0600519A70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DF5ADF1C507E0600519A70 /* LaunchScreen.storyboard */; };
 		10DF5AEC1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AEB1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m */; };
 		10DF5AF71C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AF61C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m */; };
+		5E8FEFA31C51407200B5B4AC /* ServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FEFA21C51407200B5B4AC /* ServiceFactory.m */; };
+		5E8FEFA51C5140CA00B5B4AC /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FEFA41C5140CA00B5B4AC /* ProductData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		10DF5AF21C507E0600519A70 /* VirginiaVacuums-Obj-cUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VirginiaVacuums-Obj-cUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DF5AF61C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VirginiaVacuums_Obj_cUITests.m; sourceTree = "<group>"; };
 		10DF5AF81C507E0600519A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8FEFA11C51407200B5B4AC /* ServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceFactory.h; sourceTree = "<group>"; };
+		5E8FEFA21C51407200B5B4AC /* ServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceFactory.m; sourceTree = "<group>"; };
+		5E8FEFA41C5140CA00B5B4AC /* ProductData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +167,9 @@
 		5E8FEFA01C513F9600B5B4AC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				5E8FEFA11C51407200B5B4AC /* ServiceFactory.h */,
+				5E8FEFA21C51407200B5B4AC /* ServiceFactory.m */,
+				5E8FEFA41C5140CA00B5B4AC /* ProductData.json */,
 				10DF5ADA1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld */,
 			);
 			name = Utilities;
@@ -273,6 +281,7 @@
 				10DF5AE11C507E0600519A70 /* LaunchScreen.storyboard in Resources */,
 				10DF5ADE1C507E0600519A70 /* Images.xcassets in Resources */,
 				10DF5AD91C507E0600519A70 /* Main.storyboard in Resources */,
+				5E8FEFA51C5140CA00B5B4AC /* ProductData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +310,7 @@
 				10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */,
 				10DF5AD01C507E0600519A70 /* main.m in Sources */,
 				10DF5ADC1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld in Sources */,
+				5E8FEFA31C51407200B5B4AC /* ServiceFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
