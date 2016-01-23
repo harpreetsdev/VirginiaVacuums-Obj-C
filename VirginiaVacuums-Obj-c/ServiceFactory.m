@@ -39,56 +39,27 @@
     for (NSDictionary *dictionary in resultArray) {
         
         NSLog(@"Dictionary = %@", dictionary);
-//        NSEntityDescription *entity = [NSEntityDescription entityForName:@"ProductModel" inManagedObjectContext:self.managedObjectContext];
-//        ProductModel *productModel = [[ProductModel alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
-//        
-//        productModel.num = dictionary[@"id"];
-//        productModel.productType = dictionary[@"productType"];
-//        productModel.productSlug = dictionary[@"productSlug"];
-//        productModel.productName = dictionary[@"productName"];
-//        productModel.navigationTitleText = dictionary[@"navigationTitleText"];
-//        productModel.titleText = dictionary[@"titleText"];
-//        productModel.subTitleText = dictionary[@"subTitleText"];
-//        productModel.creditLevelText = dictionary[@"creditLevelText"];
-//        productModel.descriptionText = dictionary[@"descriptionText"];
-//        productModel.milesHeadingText = dictionary[@"milesHeadingText"];
-//        productModel.milesCaptionText = dictionary[@"milesCaptionText"];
-//        productModel.milesText = dictionary[@"milesText"];
-//        productModel.rewardsHeadingText = dictionary[@"rewardsHeadingText"];
-//        productModel.rewardsText = dictionary[@"rewardsText"];
-//        productModel.rewardsCaptionText = dictionary[@"rewardsCaptionText"];
-//        productModel.termsAndConditionsHeadingText = dictionary[@"termsAndConditionsHeadingText"];
-//        productModel.termsAndConditionsText = dictionary[@"termsAndConditionsText"];
-//        productModel.wouldIQualifyButtonText = dictionary[@"wouldIQualifyButtonText"];
-//        productModel.howMuchWouldIEarnButtonText = dictionary[@"howMuchWouldIEarnButtonText"];
-//        productModel.seeCatalogButtonText = dictionary[@"seeCatalogButtonText"];
-//        productModel.zoomInButtonText = dictionary[@"zoomInButtonText"];
-//        productModel.menuButtonImage = dictionary[@"menuButtonImage"];
-//        productModel.backButtonImage = dictionary[@"backButtonImage"];
-//        productModel.foregroundInsertImage = dictionary[@"foregroundInsertImage"];
-//        productModel.foregroundImage = dictionary[@"foregroundImage"];
-//        productModel.backgroundImage = dictionary[@"backgroundImage"];
-//        productModel.cardImage = dictionary[@"cardImage"];
-//        productModel.cardShadowImage = dictionary[@"cardShadowImage"];
-//        productModel.cardImageRotated = dictionary[@"cardImageRotated"];
-//        productModel.creditLevelImage = dictionary[@"creditLevelImage"];
-//        productModel.rewardsImage0 = dictionary[@"rewardsImage0"];
-//        productModel.rewardsImage1 = dictionary[@"rewardsImage1"];
-//        productModel.rewardsImage2 = dictionary[@"rewardsImage2"];
-//        productModel.zoomInButtonImage = dictionary[@"zoomInButtonImage"];
-//        productModel.wouldIQualifyButtonImage = dictionary[@"wouldIQualifyButtonImage"];
-//        productModel.howMuchWouldIEarnButtonImage = dictionary[@"howMuchWouldIEarnButtonImage"];
-//        productModel.seeCatalogButtonImage = dictionary[@"seeCatalogButtonImage"];
-//        productModel.hrImage = dictionary[@"hrImage"];
-//        productModel.seq = dictionary[@"seq"];
-//        productModel.cellTitle = dictionary[@"cellTitle"];                        // Matrix View Data from the Same JSON Object
-//        productModel.cellDescription = dictionary[@"cellDescription"];
-//        productModel.cellSubDescription = dictionary[@"cellSubDescription"];
-//        productModel.cellImage = dictionary[@"cellImage"];
-//        productModel.cellThumbnail = dictionary[@"cellThumbnail"];
-//        productModel.placeHolder = dictionary[@"placeHolder"];
-//        productModel.movieString = dictionary[@"movieString"];
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"ProductDetail" inManagedObjectContext:self.managedObjectContext];
+        ProductDetail *productModel = [[ProductDetail alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
+        
+        productModel.productType = dictionary[@"productType"];
+        
+        NSArray *productMenuArray = [dictionary valueForKeyPath:@"productDetail.menuScreen"];
+        
+        for (NSDictionary *menu in productMenuArray) {
+            productModel.menuTitleText = menu[@"titleText"];
+            productModel.menuCellImg = menu[@"titleText"];
+        }
+        
+        NSArray *productDetailArray = [dictionary valueForKeyPath:@"productDetail.productDetailScreen"];
+        
+        for (NSDictionary *detailScreen in productDetailArray) {
+            productModel.productDetailPageTitle = detailScreen[@"detailPageProductTitle"];
+            productModel.productDetailPageImg = detailScreen[@"detailPageProductImage"];
+            productModel.productFeatureText = detailScreen[@"productFeatureText"];
+        }
     }
+    
     [self saveContext];
 }
 
