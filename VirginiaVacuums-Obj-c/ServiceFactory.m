@@ -9,10 +9,11 @@
 #import "ServiceFactory.h"
 
 @implementation ServiceFactory
+@synthesize menuFetchedResultsController = _menuFetchedResultsController;
 
 +(id)sharedInstance
 {
-    static ServiceFactory *serviceFactory; // Singleton method to initialize the Service factory only once.
+    static ServiceFactory *serviceFactory; // Singleton method to initialize the Service factory and load it on the stack.
     static dispatch_once_t once;
     
     dispatch_once (&once, ^{
@@ -25,6 +26,19 @@
     return serviceFactory;
     
 }
+
+- (id) init
+{
+    self = [super init];
+    
+    if (self) {
+           [self writeproductModelDataToPersistentStore];
+    }
+    
+    return self;
+}
+
+#pragma mark Data write methods
 
 - (void) writeproductModelDataToPersistentStore // Write detail view data to the Persistent store during first install.
 {
@@ -62,6 +76,95 @@
     
     [self saveContext];
 }
+
+#pragma mark Data read methods
+// FetchedResultsController for Menu page table view.
+- (NSFetchedResultsController *)menuFetchedResultsController
+{
+    if (_menuFetchedResultsController != nil) {
+        
+        return _menuFetchedResultsController;
+        
+    }
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init]; // Perform a fetch specific to the Objects we want to Retrieve.
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"ProductDetail" inManagedObjectContext:[self managedObjectContext]];
+    [fetchRequest setEntity:entity];
+    
+    NSFetchedResultsController *aMenuFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    _menuFetchedResultsController = aMenuFetchedResultsController;
+    _menuFetchedResultsController.delegate = self;
+    NSError *anError;
+    
+    if (![_menuFetchedResultsController performFetch:&anError]) {
+        NSLog(@"Error = %@", anError);
+    }
+    
+    return _menuFetchedResultsController;
+}
+
+// Getter methods for different product types.
+
+- (NSArray *)vacuumCleanerArray
+{
+    if (_vacuumCleanerArray == nil) {
+        
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"ProductDetail" inManagedObjectContext:[self managedObjectContext]];
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        NSString *keyName = @"productType";
+        NSString *keyValue = @"VacuumCleaner";
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"%K like %@", keyName, keyValue]; // Specifying the predicate based on product type.
+        
+        [fetchRequest setEntity:entity];
+        [fetchRequest setPredicate:predicate];
+        NSError *error;
+        _vacuumCleanerArray = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error]; // Array of Vacuum cleaners.
+        
+    }
+    
+    return _vacuumCleanerArray;
+}
+
+- (NSArray *)airPurifierArray
+{
+    if (_airPurifierArray == nil) {
+        
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"ProductDetail" inManagedObjectContext:[self managedObjectContext]];
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        NSString *keyName = @"productType";
+        NSString *keyValue = @"AirPurifier";
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"%K like %@", keyName, keyValue]; // Specifying the predicate based on product type.
+        [fetchRequest setEntity:entity];
+        [fetchRequest setPredicate:predicate];
+        NSError *error;
+        _airPurifierArray = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error]; // Array of Air Purifiers.
+        
+    }
+    
+    return _airPurifierArray;
+}
+
+
+- (NSArray *)replacementPartsArray
+{
+    if (_replacementPartsArray == nil) {
+        
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"ProductDetail" inManagedObjectContext:[self managedObjectContext]];
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        NSString *keyName = @"productType";
+        NSString *keyValue = @"ReplacementPart";
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"%K like %@", keyName, keyValue]; // Specifying the predicate based on product type.
+        [fetchRequest setEntity:entity];
+        [fetchRequest setPredicate:predicate];
+        //[fetchRequest setSortDescriptors:sorts];
+        NSError *error;
+        _replacementPartsArray = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error]; // Array of Replacement parts.
+        
+    }
+    
+    return _replacementPartsArray;
+}
+
 
 
 #pragma mark - Core Data stack

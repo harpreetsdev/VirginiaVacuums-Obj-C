@@ -9,12 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "ProductDetail.h"
-@interface ServiceFactory : NSObject
+@interface ServiceFactory : NSObject <NSFetchedResultsControllerDelegate>
 
 
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (strong, nonatomic) NSFetchedResultsController *menuFetchedResultsController;
+@property (strong, nonatomic) NSArray *vacuumCleanerArray;
+@property (strong, nonatomic) NSArray *airPurifierArray;
+@property (strong, nonatomic) NSArray *replacementPartsArray;
+
 
 
 + (id)sharedInstance;
