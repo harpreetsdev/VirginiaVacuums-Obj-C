@@ -1,6 +1,7 @@
 [
  {
- "VacuumCleaners":[
+ "productType":"VacuumCleaners",
+ "productDetail":[
                    "menuScreen":[
                                 {"titleText":"VACUUM CLEANERS",
                                  "cellImage":"MenuVacimage"}
@@ -25,7 +26,8 @@
  ]
 },
 {
- "AirPurifiers":[
+ "productType":"AirPurifiers",
+ "productDetail":[
                     "menuScreen":[
                                   {"titleText":"AIR PURIFIERS",
                                   "cellImage":"MenuAirPurifierImg"}
@@ -50,7 +52,8 @@
                     ]
  },
 {
- "ReplacementParts":[
+ "productType":"ReplacementParts",
+ "productDetail":[
                     "menuScreen":[
                                   {"titleText":"REPLACEMENTS PARTS",
                                   "cellImage":"MenuReplacementPartsImg"}

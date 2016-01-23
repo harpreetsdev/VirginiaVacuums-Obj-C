@@ -126,7 +126,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2pt-7H-Wst">
                                 <rect key="frame" x="20" y="450" width="555" height="212"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Virginia Vacuums is a one-stop superstore for all of your vacuum cleaning needs. Whether you buy off the web or walk into our "real" store, our service will always have the same personalized "neighborhood store" feeling. We offer free shipping for purchases over $50 (Continental US only) and we are an authorized dealer for Miele, Simplicity, and Dirt Devil vacuums.We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner parts, air cleaners, air fresheners, bags, belts, detergent, filters and more! We also offer vacuum cleaner repairs and tune-ups, including custom circuit board fabrication and installation. Because we always want to offer the best experience available, we work hard to provide excellent customer service and many hard to find parts are available right here in our store!</mutableString>
+                                <string key="text">Virginia Vacuums is a one-stop superstore for all of your vacuum cleaning needs. Whether you buy off the web or walk into our store, our service will always have the same personalized "neighborhood store" feeling. We offer free shipping for purchases over $50 (Continental US only) and we are an authorized dealer for Miele, Simplicity, and Dirt Devil vacuums.
+
+We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner parts, air cleaners, air fresheners, bags, belts, detergent, filters and more! We also offer vacuum cleaner repairs and tune-ups, including custom circuit board fabrication and installation. Because we always want to offer the best experience available, we work hard to provide excellent customer service and many hard to find parts are available right here in our store!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -166,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="655" y="616"/>
+            <point key="canvasLocation" x="559" y="757"/>
         </scene>
     </scenes>
     <resources>
