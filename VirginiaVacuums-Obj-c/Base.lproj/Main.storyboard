@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oIE-x7-De6">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huT-c4-6WJ" userLabel="Header View">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                 <subviews>
@@ -40,9 +43,10 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SAt-NM-QHI">
-                                <rect key="frame" x="0.0" y="80" width="600" height="211"/>
+                                <rect key="frame" x="0.0" y="80" width="600" height="350"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="90A-cZ-eI1"/>
                                     <constraint firstAttribute="height" constant="211" id="x7c-MT-qwN"/>
                                 </constraints>
                                 <prototypes>
@@ -55,9 +59,14 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="x7c-MT-qwN"/>
+                                    </mask>
+                                </variation>
                             </tableView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2pt-7H-Wst">
-                                <rect key="frame" x="159" y="444" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2pt-7H-Wst">
+                                <rect key="frame" x="20" y="450" width="555" height="212"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -70,9 +79,22 @@
                             <constraint firstItem="huT-c4-6WJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="3VD-2O-k9v"/>
                             <constraint firstItem="SAt-NM-QHI" firstAttribute="leading" secondItem="huT-c4-6WJ" secondAttribute="leading" id="7s4-mx-vaB"/>
                             <constraint firstItem="SAt-NM-QHI" firstAttribute="top" secondItem="huT-c4-6WJ" secondAttribute="bottom" id="9cA-G7-tS7"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2pt-7H-Wst" secondAttribute="bottom" constant="-62" id="EIX-UZ-G7T"/>
+                            <constraint firstItem="2pt-7H-Wst" firstAttribute="top" secondItem="SAt-NM-QHI" secondAttribute="bottom" constant="20" id="JjC-Kx-OEC"/>
+                            <constraint firstItem="SAt-NM-QHI" firstAttribute="leading" secondItem="huT-c4-6WJ" secondAttribute="leading" id="KCg-hA-9eJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SAt-NM-QHI" secondAttribute="trailing" constant="-20" id="RLp-oo-VxP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SAt-NM-QHI" secondAttribute="trailing" id="Wtw-IZ-9IV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="huT-c4-6WJ" secondAttribute="trailing" constant="-20" id="XGs-cA-c8a"/>
+                            <constraint firstItem="2pt-7H-Wst" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iQA-5U-Ea3"/>
                             <constraint firstItem="huT-c4-6WJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="puG-vG-bZJ"/>
+                            <constraint firstItem="2pt-7H-Wst" firstAttribute="trailing" secondItem="SAt-NM-QHI" secondAttribute="trailing" constant="-25" id="uPw-QU-Xid"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1wJ-Jy-i9L"/>
+                                <exclude reference="Wtw-IZ-9IV"/>
+                            </mask>
+                        </variation>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
