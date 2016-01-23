@@ -42,7 +42,7 @@
                                     <constraint firstItem="aMv-VN-YU6" firstAttribute="top" secondItem="huT-c4-6WJ" secondAttribute="top" constant="30" id="ubL-n7-SSq"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SAt-NM-QHI">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SAt-NM-QHI">
                                 <rect key="frame" x="0.0" y="80" width="600" height="350"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -56,7 +56,65 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tBZ-Sa-mIh" id="2BV-lc-auV">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VACUUM CLEANERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRJ-Rj-kwR" userLabel="Product Category Label">
+                                                    <rect key="frame" x="199" y="20" width="357" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="357" id="FXt-ld-14n"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="345" id="mvX-lv-MPB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MenuVacimage" translatesAutoresizingMaskIntoConstraints="NO" id="auu-tH-fek" userLabel="Product Image">
+                                                    <rect key="frame" x="20" y="20" width="100" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="BRZ-5l-tYn"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="BRZ-5l-tYn"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SRJ-Rj-kwR" firstAttribute="leading" secondItem="2BV-lc-auV" secondAttribute="leading" constant="254" id="AP1-6H-Xyd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="SRJ-Rj-kwR" secondAttribute="trailing" constant="36" id="HrL-gv-Rog"/>
+                                                <constraint firstItem="auu-tH-fek" firstAttribute="top" secondItem="SRJ-Rj-kwR" secondAttribute="top" id="TPd-11-0LS"/>
+                                                <constraint firstItem="auu-tH-fek" firstAttribute="leading" secondItem="2BV-lc-auV" secondAttribute="leadingMargin" constant="12" id="VDY-kJ-Jjx"/>
+                                                <constraint firstItem="auu-tH-fek" firstAttribute="top" secondItem="2BV-lc-auV" secondAttribute="topMargin" constant="12" id="hK1-Ck-kQv"/>
+                                                <constraint firstItem="auu-tH-fek" firstAttribute="bottom" secondItem="SRJ-Rj-kwR" secondAttribute="bottom" id="m7f-6M-bX7"/>
+                                                <constraint firstItem="SRJ-Rj-kwR" firstAttribute="centerX" secondItem="2BV-lc-auV" secondAttribute="centerX" constant="77.5" id="qnZ-8b-eEe"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="SRJ-Rj-kwR" secondAttribute="trailing" constant="42" id="uO4-mh-7QE"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="auu-tH-fek" secondAttribute="bottom" constant="18" id="ylc-8R-8mP"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="AP1-6H-Xyd"/>
+                                                    <exclude reference="HrL-gv-Rog"/>
+                                                    <exclude reference="uO4-mh-7QE"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="SRJ-Rj-kwR" secondAttribute="trailing" constant="44" id="02b-QE-Uls"/>
+                                            <constraint firstAttribute="trailing" secondItem="auu-tH-fek" secondAttribute="trailing" constant="480" id="7Ka-XN-fJQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="2BV-lc-auV" secondAttribute="trailing" constant="50" id="QCi-hW-NzO"/>
+                                            <constraint firstAttribute="trailing" secondItem="SRJ-Rj-kwR" secondAttribute="trailing" constant="44" id="bJF-e9-UvA"/>
+                                            <constraint firstAttribute="trailing" secondItem="SRJ-Rj-kwR" secondAttribute="trailing" id="jei-yF-wcb"/>
+                                            <constraint firstAttribute="trailing" secondItem="2BV-lc-auV" secondAttribute="trailing" id="nAo-kJ-mw8"/>
+                                            <constraint firstAttribute="trailing" secondItem="2BV-lc-auV" secondAttribute="trailing" id="q0z-Wl-j5V"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="nAo-kJ-mw8"/>
+                                                <exclude reference="q0z-Wl-j5V"/>
+                                                <exclude reference="bJF-e9-UvA"/>
+                                                <exclude reference="jei-yF-wcb"/>
+                                            </mask>
+                                        </variation>
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="default">
@@ -104,4 +162,7 @@
             <point key="canvasLocation" x="655" y="616"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MenuVacimage" width="72" height="72"/>
+    </resources>
 </document>
