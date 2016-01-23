@@ -9,6 +9,11 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIView *headerView;
+@property (weak, nonatomic) IBOutlet UILabel *pageTitleLabel;
+@property (weak, nonatomic) IBOutlet UITableView *productsTableView;
+@property (weak, nonatomic) IBOutlet UITextView *introductionTextView;
 
 @end
 
@@ -17,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    //ServiceFactory *serviceFactory = [ServiceFactory sharedInstance];
 }
 
 - (void)didReceiveMemoryWarning {

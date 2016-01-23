@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1089281B1C53C5A0006E6325 /* ProductDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 108928181C53C5A0006E6325 /* ProductDetail+CoreDataProperties.m */; };
+		1089281C1C53C5A0006E6325 /* ProductDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 1089281A1C53C5A0006E6325 /* ProductDetail.m */; };
 		10DF5AD01C507E0600519A70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5ACF1C507E0600519A70 /* main.m */; };
 		10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AD21C507E0600519A70 /* AppDelegate.m */; };
 		10DF5AD61C507E0600519A70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AD51C507E0600519A70 /* ViewController.m */; };
@@ -16,6 +18,8 @@
 		10DF5AE11C507E0600519A70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DF5ADF1C507E0600519A70 /* LaunchScreen.storyboard */; };
 		10DF5AEC1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AEB1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m */; };
 		10DF5AF71C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AF61C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m */; };
+		5E8FEFA31C51407200B5B4AC /* ServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FEFA21C51407200B5B4AC /* ServiceFactory.m */; };
+		5E8FEFA51C5140CA00B5B4AC /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FEFA41C5140CA00B5B4AC /* ProductData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		108928171C53C5A0006E6325 /* ProductDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProductDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		108928181C53C5A0006E6325 /* ProductDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProductDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		108928191C53C5A0006E6325 /* ProductDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetail.h; sourceTree = "<group>"; };
+		1089281A1C53C5A0006E6325 /* ProductDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetail.m; sourceTree = "<group>"; };
 		10DF5ACB1C507E0600519A70 /* VirginiaVacuums-Obj-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VirginiaVacuums-Obj-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DF5ACF1C507E0600519A70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10DF5AD11C507E0600519A70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +61,9 @@
 		10DF5AF21C507E0600519A70 /* VirginiaVacuums-Obj-cUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VirginiaVacuums-Obj-cUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DF5AF61C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VirginiaVacuums_Obj_cUITests.m; sourceTree = "<group>"; };
 		10DF5AF81C507E0600519A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8FEFA11C51407200B5B4AC /* ServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceFactory.h; sourceTree = "<group>"; };
+		5E8FEFA21C51407200B5B4AC /* ServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceFactory.m; sourceTree = "<group>"; };
+		5E8FEFA41C5140CA00B5B4AC /* ProductData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +114,9 @@
 		10DF5ACD1C507E0600519A70 /* VirginiaVacuums-Obj-c */ = {
 			isa = PBXGroup;
 			children = (
-				10DF5AD11C507E0600519A70 /* AppDelegate.h */,
-				10DF5AD21C507E0600519A70 /* AppDelegate.m */,
-				10DF5AD41C507E0600519A70 /* ViewController.h */,
-				10DF5AD51C507E0600519A70 /* ViewController.m */,
-				10DF5AD71C507E0600519A70 /* Main.storyboard */,
-				10DF5ADD1C507E0600519A70 /* Images.xcassets */,
-				10DF5ADF1C507E0600519A70 /* LaunchScreen.storyboard */,
-				10DF5AE21C507E0600519A70 /* Info.plist */,
-				10DF5ADA1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld */,
+				5E8FEFA01C513F9600B5B4AC /* Utilities */,
+				5E8FEF9E1C513F2E00B5B4AC /* Controllers */,
+				5E8FEF9F1C513F4D00B5B4AC /* Views */,
 				10DF5ACE1C507E0600519A70 /* Supporting Files */,
 			);
 			path = "VirginiaVacuums-Obj-c";
@@ -120,7 +125,11 @@
 		10DF5ACE1C507E0600519A70 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				10DF5AE21C507E0600519A70 /* Info.plist */,
+				10DF5AD11C507E0600519A70 /* AppDelegate.h */,
+				10DF5AD21C507E0600519A70 /* AppDelegate.m */,
 				10DF5ACF1C507E0600519A70 /* main.m */,
+				10DF5ADD1C507E0600519A70 /* Images.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +150,39 @@
 				10DF5AF81C507E0600519A70 /* Info.plist */,
 			);
 			path = "VirginiaVacuums-Obj-cUITests";
+			sourceTree = "<group>";
+		};
+		5E8FEF9E1C513F2E00B5B4AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				10DF5AD41C507E0600519A70 /* ViewController.h */,
+				10DF5AD51C507E0600519A70 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5E8FEF9F1C513F4D00B5B4AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10DF5AD71C507E0600519A70 /* Main.storyboard */,
+				10DF5ADF1C507E0600519A70 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5E8FEFA01C513F9600B5B4AC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				108928171C53C5A0006E6325 /* ProductDetail+CoreDataProperties.h */,
+				108928181C53C5A0006E6325 /* ProductDetail+CoreDataProperties.m */,
+				108928191C53C5A0006E6325 /* ProductDetail.h */,
+				1089281A1C53C5A0006E6325 /* ProductDetail.m */,
+				5E8FEFA11C51407200B5B4AC /* ServiceFactory.h */,
+				5E8FEFA21C51407200B5B4AC /* ServiceFactory.m */,
+				5E8FEFA41C5140CA00B5B4AC /* ProductData.json */,
+				10DF5ADA1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +291,7 @@
 				10DF5AE11C507E0600519A70 /* LaunchScreen.storyboard in Resources */,
 				10DF5ADE1C507E0600519A70 /* Images.xcassets in Resources */,
 				10DF5AD91C507E0600519A70 /* Main.storyboard in Resources */,
+				5E8FEFA51C5140CA00B5B4AC /* ProductData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +317,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DF5AD61C507E0600519A70 /* ViewController.m in Sources */,
+				1089281C1C53C5A0006E6325 /* ProductDetail.m in Sources */,
 				10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */,
 				10DF5AD01C507E0600519A70 /* main.m in Sources */,
 				10DF5ADC1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld in Sources */,
+				1089281B1C53C5A0006E6325 /* ProductDetail+CoreDataProperties.m in Sources */,
+				5E8FEFA31C51407200B5B4AC /* ServiceFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +548,7 @@
 				10DF5AFD1C507E0600519A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10DF5AFE1C507E0600519A70 /* Build configuration list for PBXNativeTarget "VirginiaVacuums-Obj-cTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +557,7 @@
 				10DF5B001C507E0600519A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10DF5B011C507E0600519A70 /* Build configuration list for PBXNativeTarget "VirginiaVacuums-Obj-cUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +566,7 @@
 				10DF5B031C507E0600519A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
