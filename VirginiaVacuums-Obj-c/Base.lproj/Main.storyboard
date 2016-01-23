@@ -126,7 +126,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2pt-7H-Wst">
                                 <rect key="frame" x="20" y="450" width="555" height="212"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Virginia Vacuums is a one-stop superstore for all of your vacuum cleaning needs. Whether you buy off the web or walk into our "real" store, our service will always have the same personalized "neighborhood store" feeling. We offer free shipping for purchases over $50 (Continental US only) and we are an authorized dealer for Miele, Simplicity, and Dirt Devil vacuums.We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner parts, air cleaners, air fresheners, bags, belts, detergent, filters and more! We also offer vacuum cleaner repairs and tune-ups, including custom circuit board fabrication and installation. Because we always want to offer the best experience available, we work hard to provide excellent customer service and many hard to find parts are available right here in our store!</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -156,6 +156,13 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="headerView" destination="huT-c4-6WJ" id="5UG-5d-Pdp"/>
+                        <outlet property="introductionTextView" destination="2pt-7H-Wst" id="bfI-Lg-JB7"/>
+                        <outlet property="pageTitleLabel" destination="aMv-VN-YU6" id="r38-k5-ez9"/>
+                        <outlet property="productsTableView" destination="SAt-NM-QHI" id="2g9-Y9-HQK"/>
+                        <outlet property="scrollView" destination="oIE-x7-De6" id="zY7-R1-Utc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
