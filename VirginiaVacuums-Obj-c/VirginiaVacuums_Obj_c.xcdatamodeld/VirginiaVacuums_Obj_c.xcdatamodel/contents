@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15B42" minimumToolsVersion="Automatic">
-    <entity name="ProductDetail" syncable="YES">
+    <entity name="ProductDetail" representedClassName="ProductDetail" syncable="YES">
         <attribute name="menuCellImg" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="menuTitleText" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="productDetailPageImg" optional="YES" attributeType="String" syncable="YES"/>

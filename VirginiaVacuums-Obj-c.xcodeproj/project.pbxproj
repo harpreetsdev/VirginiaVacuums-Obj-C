@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1089281B1C53C5A0006E6325 /* ProductDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 108928181C53C5A0006E6325 /* ProductDetail+CoreDataProperties.m */; };
+		1089281C1C53C5A0006E6325 /* ProductDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 1089281A1C53C5A0006E6325 /* ProductDetail.m */; };
 		10DF5AD01C507E0600519A70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5ACF1C507E0600519A70 /* main.m */; };
 		10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AD21C507E0600519A70 /* AppDelegate.m */; };
 		10DF5AD61C507E0600519A70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AD51C507E0600519A70 /* ViewController.m */; };
@@ -38,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		108928171C53C5A0006E6325 /* ProductDetail+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProductDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		108928181C53C5A0006E6325 /* ProductDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProductDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+		108928191C53C5A0006E6325 /* ProductDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetail.h; sourceTree = "<group>"; };
+		1089281A1C53C5A0006E6325 /* ProductDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetail.m; sourceTree = "<group>"; };
 		10DF5ACB1C507E0600519A70 /* VirginiaVacuums-Obj-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VirginiaVacuums-Obj-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DF5ACF1C507E0600519A70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10DF5AD11C507E0600519A70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -167,6 +173,10 @@
 		5E8FEFA01C513F9600B5B4AC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				108928171C53C5A0006E6325 /* ProductDetail+CoreDataProperties.h */,
+				108928181C53C5A0006E6325 /* ProductDetail+CoreDataProperties.m */,
+				108928191C53C5A0006E6325 /* ProductDetail.h */,
+				1089281A1C53C5A0006E6325 /* ProductDetail.m */,
 				5E8FEFA11C51407200B5B4AC /* ServiceFactory.h */,
 				5E8FEFA21C51407200B5B4AC /* ServiceFactory.m */,
 				5E8FEFA41C5140CA00B5B4AC /* ProductData.json */,
@@ -307,9 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DF5AD61C507E0600519A70 /* ViewController.m in Sources */,
+				1089281C1C53C5A0006E6325 /* ProductDetail.m in Sources */,
 				10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */,
 				10DF5AD01C507E0600519A70 /* main.m in Sources */,
 				10DF5ADC1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld in Sources */,
+				1089281B1C53C5A0006E6325 /* ProductDetail+CoreDataProperties.m in Sources */,
 				5E8FEFA31C51407200B5B4AC /* ServiceFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
