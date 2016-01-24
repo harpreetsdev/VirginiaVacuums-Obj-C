@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15B42" minimumToolsVersion="Automatic">
     <entity name="ProductDetail" representedClassName="ProductDetail" syncable="YES">
+        <attribute name="fetch" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="menuCellImg" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="menuTitleText" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="productDetailPageImg" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="productDetailPageTitle" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="productFeatureText" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="productType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seq" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ProductDetail" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="ProductDetail" positionX="-63" positionY="-18" width="128" height="165"/>
     </elements>
 </model>

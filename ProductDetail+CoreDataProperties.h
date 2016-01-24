@@ -2,7 +2,7 @@
 //  ProductDetail+CoreDataProperties.h
 //  VirginiaVacuums-Obj-c
 //
-//  Created by HARPREET SINGH on 1/23/16.
+//  Created by HARPREET SINGH on 1/24/16.
 //  Copyright © 2016 HARPREET SINGH. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *productDetailPageTitle;
 @property (nullable, nonatomic, retain) NSString *productFeatureText;
 @property (nullable, nonatomic, retain) NSString *productType;
+@property (nullable, nonatomic, retain) NSString *fetch;
+@property (nullable, nonatomic, retain) NSString *seq;
 
 @end
 

@@ -1,82 +1,92 @@
 [
- {
+{
+ "seq":"1",
+ "fetch":"yes",
  "productType":"VacuumCleaner",
- "productDetail":[
-                   "menuScreen":[
-                                {"titleText":"VACUUM CLEANERS",
-                                 "cellImage":"MenuVacimage"}
-                    ],
-                    "productDetailScreen": [
-                                {"detailPageProductTitle":"MIELE CAPRI",
-                                 "detailPageProductImage":"",
-                                 "productFeatureText":"As the most recent addition to the line of Miele S2 canister vacuum cleaners, the Miele Capri is ideal for anyone looking for the quality of a Miele canister vacuum cleaner in an inexpensive package. Featuring the Miele Vortex motor, the lava gray Miele Capri is a compact, lightweight vacuum well-suited to clean not only smooth floors, but also low to medium pile carpeting. With the same features found in larger more expensive models, the Miele Capri has a high capacity, self-sealing dust bag that keeps you vacuuming longer and allows you to cleanly remove dirt and allergens from your home. Purchase the optional active HEPA filter and receive the full benefit of Miele's Clean Air system."},
-                                {"detailPageProductTitle":"SIMPLICITY CINCH",
-                                 "detailPageProductImage":"",
-                                            "productFeatureText":"With an 11.5 amps Motor and  100% Sealed, 6-stage S-Class HEPA filtration system with a 2 year comprehensive, 7 year motor Warranty Simplicity Cinch is well worth its Price. The users are Given the convenience of  a Compact power nozzle, Bag Full indicator light on canister and an Impressive 25 foot cord with automatic rewind.Besides these features there are the Onboard Tools such as a Crevice tool, an Upholstery brush and a Dusting brush.The accessories include a Deluxe 12 inch hardwood floor brush and a Combo area rug/hard floor brush"},
-                                {"detailPageProductTitle":"SIMPLICITY SNAP",
-                                 "detailPageProductImage":"",
-                                 "productFeatureText":" Featuring an 11 amps Motor with electronic variable speed control and HiFlow HEPA bag filtration Snap comes with a  2 years repair warranty. With the Convenience of a  Compact power nozzle, Full bag indicator and on-board tools such as a Dusting brush, Crevice tool and an Upholstery brush Snap is another good vacuum from Simplicity. Accessories include Deluxe 12 inch hardwood floor brushCombo, area rug/hard floor brush,  Deluxe dusting brush. Comes in Grape Soda color. "},
-                                {"detailPageProductTitle":"SIMPLICITY VERVE",
-                                 "detailPageProductImage":"",
-                                 "productFeatureText":" Featuring an 11 amps Motor with electronic variable speed control and HiFlow HEPA bag filtration Snap comes with a  2 years repair warranty. With the Convenience of a  Compact power nozzle, Full bag indicator and on-board tools such as a Dusting brush, Crevice tool and an Upholstery brush Snap is another good vacuum from Simplicity. Accessories include Deluxe 12 inch hardwood floor brushCombo, area rug/hard floor brush,  Deluxe dusting brush. Comes in Grape Soda color. "},
-                                {"detailPageProductTitle":"MIELE CALLISTO",
-                                 "detailPageProductImage":"",
-                                 "productFeatureText":" Featuring an 11 amps Motor with electronic variable speed control and HiFlow HEPA bag filtration Snap comes with a  2 years repair warranty. With the Convenience of a  Compact power nozzle, Full bag indicator and on-board tools such as a Dusting brush, Crevice tool and an Upholstery brush Snap is another good vacuum from Simplicity. Accessories include Deluxe 12 inch hardwood floor brushCombo, area rug/hard floor brush,  Deluxe dusting brush. Comes in Grape Soda color. "}
-                    ]
- ]
+ "menuScreenTitle":"VACUUM CLEANERS",
+ "detailPageProductTitle":"MIELE CAPRI",
+ "cellImage":"MenuVacimage",
+ "detailPageProductImage":"",
+ "productFeatureText":""
 },
-{
- "productType":"AirPurifier",
- "productDetail":[
-                    "menuScreen":[
-                                  {"titleText":"AIR PURIFIERS",
-                                  "cellImage":"MenuAirPurifierImg"}
-                                  ],
-                    "productDetailScreen": [
-                                            {"detailPageProductTitle":"AUSTIN AIR 2100",
-                                            "detailPageProductImage":"",
-                                            "productFeatureText":"Available only through authorized retailers, Simplicity Jack is a compact canister vacuum manufactured by the Simplicity Company. Simplicity has built its reputation on building vacuums without extra gadgets that can break and make life difficult. They simply build a great vacuum and then back it with an exceptional 2 year warranty."},
-                                            {"detailPageProductTitle":"AUSTIN POWERTRAIN 210",
-                                            "detailPageProductImage":"",
-                                            "productFeatureText":"Available only through authorized retailers, Simplicity Jack is a compact canister vacuum manufactured by the Simplicity Company. Simplicity has built its reputation on building vacuums without extra gadgets that can break and make life difficult. They simply build a great vacuum and then back it with an exceptional 2 year warranty."},
-                                            {"detailPageProductTitle":"POWER AIR",
-                                            "detailPageProductImage":"",
-                                            "productFeatureText":"Available only through authorized retailers, Simplicity Jack is a compact canister vacuum manufactured by the Simplicity Company. Simplicity has built its reputation on building vacuums without extra gadgets that can break and make life difficult. They simply build a great vacuum and then back it with an exceptional 2 year warranty."},
-                                            {"detailPageProductTitle":"",
-                                            "detailPageProductImage":"",
-                                            "productFeatureText":""},
-                                            {"detailPageProductTitle":"",
-                                            "detailPageProductImage":"",
-                                            "productFeatureText":""}
-                                            ]
-                    ]
+ {
+ "seq":"",
+ "fetch":"",
+ "productType":"VacuumCleaner",
+ "menuScreenTitle":"",
+ "detailPageProductTitle":"",
+ "cellImage":"",
+ "detailPageProductImage":"",
+ "productFeatureText":""
  },
-{
+ {
+ "seq":"2",
+ "fetch":"yes",
+ "productType":"AirPurifier",
+ "menuScreenTitle":"AIR PURIFIERS",
+ "detailPageProductTitle":"",
+ "cellImage":"MenuAirPurifierImg",
+ "detailPageProductImage":"",
+ "productFeatureText":""
+ },
+ {
+ "seq":"",
+ "fetch":"",
+ "productType":"AirPurifier",
+ "menuScreenTitle":"AIR PURIFIERS",
+ "detailPageProductTitle":"",
+ "cellImage":"",
+ "detailPageProductImage":"",
+ "productFeatureText":""
+ },
+ {
+ "seq":"",
+ "fetch":"",
+ "productType":"AirPurifier",
+ "menuScreenTitle":"",
+ "detailPageProductTitle":"",
+ "cellImage":"",
+ "detailPageProductImage":"",
+ "productFeatureText":""
+ },
+ {
+ "seq":"",
+ "fetch":"",
+ "productType":"VacuumCleaner",
+ "menuScreenTitle":"",
+ "detailPageProductTitle":"",
+ "cellImage":"",
+ "detailPageProductImage":"",
+ "productFeatureText":""
+ },
+ {
+ "seq":"3",
+ "fetch":"yes",
  "productType":"ReplacementPart",
- "productDetail":[
-                    "menuScreen":[
-                                  {"titleText":"REPLACEMENTS PARTS",
-                                  "cellImage":"MenuReplacementPartsImg"}
-                                  ],
-                    "productDetailScreen": [
-                                            {"detailPageProductTitle":"MIELE STB-210 TURBO",
-                                            "detailPageProductImage":"",
-                                            "productFeatureText":"This lightweight carpet tool is driven by the suction and movement of the vacuum cleaner. It features an 11 inch wide brush roll, floating head design and 360� swivel neck provide excellent maneuverability. Recommended for:Gentle cleaning and restoring of crushed carpet nap of low to medium pile carpets with lighter densities."},
-                                            {"detailPageProductTitle":"PARQUET TOOL",
-                                            "detailPageProductImage":"",
-                                            "productFeatureText":"The Parquet floor brush is designed for wood and tiled floors. It has two soft rollers for an easy gliding action and synthetic bristles that sweep gently over the floor surface and brush dust particles out of cracks."},
-                                            {"detailPageProductTitle":"",
-                                            "detailPageProductImage":"",
-                                            "productFeatureText":"This lightweight carpet tool is driven by the suction and movement of the vacuum cleaner. It features an 11 inch wide brush roll, floating head design and 360� swivel neck provide excellent maneuverability. Recommended for:Gentle cleaning and restoring of crushed carpet nap of low to medium pile carpets with lighter densities."},
-                                            {"detailPageProductTitle":"HANDLE ASSEMBLY",
-                                            "detailPageProductImage":"",
-                                            "productFeatureText":"The Parquet floor brush is designed for wood and tiled floors. It has two soft rollers for an easy gliding action and synthetic bristles that sweep gently over the floor surface and brush dust particles out of cracks."},
-                                            {"detailPageProductTitle":"",
-                                            "detailPageProductImage":"",
-                                            "productFeatureText":"This lightweight carpet tool is driven by the suction and movement of the vacuum cleaner. It features an 11 inch wide brush roll, floating head design and 360� swivel neck provide excellent maneuverability. Recommended for:Gentle cleaning and restoring of crushed carpet nap of low to medium pile carpets with lighter densities."}
-                                            ]
-                    ]
+ "menuScreenTitle":"REPLACEMENTS PARTS",
+ "detailPageProductTitle":"",
+ "cellImage":"MenuReplacementPartsImg",
+ "detailPageProductImage":"",
+ "productFeatureText":""
+ },
+ {
+ "seq":"",
+ "fetch":"",
+ "productType":"ReplacementPart",
+ "menuScreenTitle":"",
+ "detailPageProductTitle":"",
+ "cellImage":"",
+ "detailPageProductImage":"",
+ "productFeatureText":""
+ },
+ {
+ "seq":"",
+ "fetch":"",
+ "productType":"ReplacementPart",
+ "menuScreenTitle":"",
+ "detailPageProductTitle":"",
+ "cellImage":"",
+ "detailPageProductImage":"",
+ "productFeatureText":""
  }
 ]
- 
- 
