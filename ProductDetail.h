@@ -2,7 +2,7 @@
 //  ProductDetail.h
 //  VirginiaVacuums-Obj-c
 //
-//  Created by HARPREET SINGH on 1/23/16.
+//  Created by HARPREET SINGH on 1/24/16.
 //  Copyright © 2016 HARPREET SINGH. All rights reserved.
 //
 

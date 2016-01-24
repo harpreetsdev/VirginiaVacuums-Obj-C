@@ -2,7 +2,7 @@
 //  ProductDetail+CoreDataProperties.m
 //  VirginiaVacuums-Obj-c
 //
-//  Created by HARPREET SINGH on 1/23/16.
+//  Created by HARPREET SINGH on 1/24/16.
 //  Copyright © 2016 HARPREET SINGH. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -19,5 +19,7 @@
 @dynamic productDetailPageTitle;
 @dynamic productFeatureText;
 @dynamic productType;
+@dynamic fetch;
+@dynamic seq;
 
 @end

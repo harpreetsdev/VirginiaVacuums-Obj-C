@@ -32,11 +32,24 @@
     self = [super init];
     
     if (self) {
-           [self writeproductModelDataToPersistentStore];
+           [self checkMappedData];
     }
     
     return self;
 }
+
+- (void) checkMappedData
+{
+    BOOL alreadyMappedData = [[NSUserDefaults standardUserDefaults] boolForKey:@"mappedData"]; // Check if the Data has been mapped to the Sqlite store
+    
+    if (!alreadyMappedData) {
+        
+        [self writeproductModelDataToPersistentStore]; // Check if the Detail view data has been mapped to the persistent store after first install
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"mappedData"];
+    }
+}
+
+
 
 #pragma mark Data write methods
 
@@ -52,26 +65,19 @@
     
     for (NSDictionary *dictionary in resultArray) {
         
-        NSLog(@"Dictionary = %@", dictionary);
+        NSLog(@"Dictionary = %@, %lu", resultArray, (unsigned long)resultArray.count);
         NSEntityDescription *entity = [NSEntityDescription entityForName:@"ProductDetail" inManagedObjectContext:self.managedObjectContext];
         ProductDetail *productModel = [[ProductDetail alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
         
+        productModel.seq = dictionary[@"seq"];
+        productModel.fetch = dictionary[@"fetch"];
         productModel.productType = dictionary[@"productType"];
-        
-        NSArray *productMenuArray = [dictionary valueForKeyPath:@"productDetail.menuScreen"];
-        
-        for (NSDictionary *menu in productMenuArray) {
-            productModel.menuTitleText = menu[@"titleText"];
-            productModel.menuCellImg = menu[@"titleText"];
-        }
-        
-        NSArray *productDetailArray = [dictionary valueForKeyPath:@"productDetail.productDetailScreen"];
-        
-        for (NSDictionary *detailScreen in productDetailArray) {
-            productModel.productDetailPageTitle = detailScreen[@"detailPageProductTitle"];
-            productModel.productDetailPageImg = detailScreen[@"detailPageProductImage"];
-            productModel.productFeatureText = detailScreen[@"productFeatureText"];
-        }
+        productModel.menuTitleText = dictionary[@"menuScreenTitle"];
+        productModel.menuCellImg = dictionary[@""];
+        productModel.productDetailPageTitle = dictionary[@"detailPageProductTitle"];
+        productModel.productDetailPageImg = dictionary[@""];
+        productModel.productFeatureText = dictionary[@"productFeatureText"];
+
     }
     
     [self saveContext];
@@ -86,11 +92,18 @@
         return _menuFetchedResultsController;
         
     }
-    
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init]; // Perform a fetch specific to the Objects we want to Retrieve.
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"ProductDetail" inManagedObjectContext:[self managedObjectContext]];
     [fetchRequest setEntity:entity];
-    
+    static NSString *yesString = @"yes";
+    static NSString *fetchString = @"fetch";
+
+    NSPredicate *fetchPredicate = [NSPredicate predicateWithFormat:@"%K like %@", fetchString, yesString];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"seq"
+                                                                   ascending:YES];
+    [fetchRequest setSortDescriptors:@[sortDescriptor]];
+    [fetchRequest setPredicate:fetchPredicate];
+
     NSFetchedResultsController *aMenuFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     _menuFetchedResultsController = aMenuFetchedResultsController;
     _menuFetchedResultsController.delegate = self;
