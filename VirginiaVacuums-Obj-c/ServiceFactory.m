@@ -73,9 +73,9 @@
         productModel.fetch = dictionary[@"fetch"];
         productModel.productType = dictionary[@"productType"];
         productModel.menuTitleText = dictionary[@"menuScreenTitle"];
-        productModel.menuCellImg = dictionary[@""];
+        productModel.menuCellImg = dictionary[@"cellImage"];
         productModel.productDetailPageTitle = dictionary[@"detailPageProductTitle"];
-        productModel.productDetailPageImg = dictionary[@""];
+        productModel.productDetailPageImg = dictionary[@"detailPageProductImage"];
         productModel.productFeatureText = dictionary[@"productFeatureText"];
 
     }

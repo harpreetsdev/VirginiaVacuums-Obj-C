@@ -59,8 +59,8 @@
     ProductDetail *productDetail = [serviceFactory.menuFetchedResultsController objectAtIndexPath:indexPath];     
     
     cell.textLabel.text = productDetail.menuTitleText;
-//    NSString *imageString = [NSString stringWithFormat:@"%@", productDetail.menuCellImg];
-//    cell.imageView.image = [UIImage imageNamed:imageString];
+    NSString *imageString = [NSString stringWithFormat:@"%@", productDetail.menuCellImg];
+    cell.imageView.image = [UIImage imageNamed:imageString];
     return cell;
 
 }

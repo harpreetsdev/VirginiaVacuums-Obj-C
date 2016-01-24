@@ -55,14 +55,14 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="96"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="VACUUM CLEANERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" id="Hus-Xb-ckp">
-                                                            <rect key="frame" x="15" y="0.0" width="570" height="96"/>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="VACUUM CLEANERS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" id="Hus-Xb-ckp">
+                                                            <rect key="frame" x="102" y="0.0" width="483" height="96"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="UIM-xa-MJC">
+                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="MenuVacimage" id="UIM-xa-MJC">
                                                             <rect key="frame" x="15" y="12" width="72" height="72"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <accessibility key="accessibilityConfiguration">
@@ -75,7 +75,7 @@
                                         </prototypes>
                                     </tableView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pt-7H-Wst">
-                                        <rect key="frame" x="0.0" y="291" width="600" height="300"/>
+                                        <rect key="frame" x="0.0" y="295" width="600" height="300"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="mgW-zE-3r3"/>
@@ -83,7 +83,7 @@
                                         <string key="text">Virginia Vacuums is a one-stop superstore for all of your vacuum cleaning needs. Whether you buy off the web or walk into our store, our service will always have the same personalized "neighborhood store" feeling. We offer free shipping for purchases over $50 (Continental US only) and we are an authorized dealer for Miele, Simplicity, and Dirt Devil vacuums.
 
 We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner parts, air cleaners, air fresheners, bags, belts, detergent, filters and more! We also offer vacuum cleaner repairs and tune-ups, including custom circuit board fabrication and installation. Because we always want to offer the best experience available, we work hard to provide excellent customer service and many hard to find parts are available right here in our store!</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -92,11 +92,11 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                                     <constraint firstItem="SAt-NM-QHI" firstAttribute="trailing" secondItem="2pt-7H-Wst" secondAttribute="trailing" id="Htp-Ih-edC"/>
                                     <constraint firstItem="SAt-NM-QHI" firstAttribute="top" secondItem="oIE-x7-De6" secondAttribute="top" id="Jv6-L7-Q5A"/>
                                     <constraint firstItem="2pt-7H-Wst" firstAttribute="leading" secondItem="SAt-NM-QHI" secondAttribute="leading" id="ZHE-gq-dhd"/>
-                                    <constraint firstItem="2pt-7H-Wst" firstAttribute="top" secondItem="SAt-NM-QHI" secondAttribute="bottom" id="bEr-gd-uJo"/>
+                                    <constraint firstItem="2pt-7H-Wst" firstAttribute="top" secondItem="SAt-NM-QHI" secondAttribute="bottom" constant="4" id="bEr-gd-uJo"/>
                                     <constraint firstAttribute="trailing" secondItem="SAt-NM-QHI" secondAttribute="trailing" id="bWW-1j-9mM"/>
                                     <constraint firstItem="SAt-NM-QHI" firstAttribute="leading" secondItem="oIE-x7-De6" secondAttribute="leading" id="cSp-5O-MN5"/>
                                     <constraint firstItem="SAt-NM-QHI" firstAttribute="leading" secondItem="oIE-x7-De6" secondAttribute="leading" id="tS9-8i-7Vz"/>
-                                    <constraint firstAttribute="bottom" secondItem="2pt-7H-Wst" secondAttribute="bottom" constant="409" id="uXQ-O2-Rtf"/>
+                                    <constraint firstAttribute="bottom" secondItem="2pt-7H-Wst" secondAttribute="bottom" constant="405" id="uXQ-O2-Rtf"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -131,4 +131,7 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
             <point key="canvasLocation" x="472" y="545"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MenuVacimage" width="72" height="72"/>
+    </resources>
 </document>

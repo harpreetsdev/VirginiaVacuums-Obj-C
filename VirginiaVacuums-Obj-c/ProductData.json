@@ -5,7 +5,7 @@
  "productType":"VacuumCleaner",
  "menuScreenTitle":"VACUUM CLEANERS",
  "detailPageProductTitle":"MIELE CAPRI",
- "cellImage":"",
+ "cellImage":"MenuVacimage",
  "detailPageProductImage":"",
  "productFeatureText":""
 },
@@ -25,7 +25,7 @@
  "productType":"AirPurifier",
  "menuScreenTitle":"AIR PURIFIERS",
  "detailPageProductTitle":"",
- "cellImage":"",
+ "cellImage":"MenuAirPurifierImg",
  "detailPageProductImage":"",
  "productFeatureText":""
  },
@@ -65,7 +65,7 @@
  "productType":"ReplacementPart",
  "menuScreenTitle":"REPLACEMENTS PARTS",
  "detailPageProductTitle":"",
- "cellImage":"",
+ "cellImage":"MenuReplacementPartsImg",
  "detailPageProductImage":"",
  "productFeatureText":""
  },
