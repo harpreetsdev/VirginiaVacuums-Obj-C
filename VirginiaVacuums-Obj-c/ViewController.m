@@ -26,7 +26,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     serviceFactory = [ServiceFactory sharedInstance];
+    [self setUpView];
+}
 
+- (void) setUpView {
+    
+    self.scrollView.contentSize = CGSizeMake(600, self.introductionTextView.frame.origin.y + self.introductionTextView.frame.size.height + 60);
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -48,11 +54,12 @@
         
     }
     
-        ProductDetail *productDetail = [serviceFactory.menuFetchedResultsController objectAtIndexPath:indexPath]; // The Credit Fetched results controller returns an Array of Fetched objects from the credit card section that can be used to populate the rows of the section.
+    ProductDetail *productDetail = [serviceFactory.menuFetchedResultsController objectAtIndexPath:indexPath]; // The Credit Fetched results controller returns an Array of Fetched objects from the credit card section that can be used to populate the rows of the section.
     
     
-        cell.textLabel.text = @"RandomText";
-    
+    cell.textLabel.text = productDetail.menuTitleText;
+    NSString *imageString = [NSString stringWithFormat:@"%@", productDetail.menuCellImg];
+    cell.imageView.image = [UIImage imageNamed:imageString];
     return cell;
 
 }
