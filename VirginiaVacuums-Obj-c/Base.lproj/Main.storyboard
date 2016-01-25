@@ -141,7 +141,7 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                         <viewControllerLayoutGuide type="top" id="wGG-dR-nes"/>
                         <viewControllerLayoutGuide type="bottom" id="piR-pP-t63"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="b64-d5-2kL">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="b64-d5-2kL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -151,11 +151,16 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fI-z5-kdx" userLabel="BackButton">
                                         <rect key="frame" x="15" y="25" width="40" height="26"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="bWE-iW-SPr"/>
+                                            <constraint firstAttribute="width" constant="40" identifier="BB1" id="bWE-iW-SPr"/>
                                         </constraints>
                                         <state key="normal" image="BackArrow"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="bWE-iW-SPr"/>
+                                            </mask>
+                                        </variation>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Products Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bL-15-KNl" userLabel="Page Title">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Products Detail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bL-15-KNl" userLabel="Page Title">
                                         <rect key="frame" x="200" y="25" width="200" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="2eP-sr-zBb"/>
@@ -167,27 +172,34 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                                 </subviews>
                                 <color key="backgroundColor" red="0.69359456809999998" green="0.17712639529999999" blue="0.2380396062" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5fI-z5-kdx" secondAttribute="trailing" priority="999" constant="545" identifier="BB2" id="4oa-oB-M6d"/>
                                     <constraint firstAttribute="height" constant="80" id="80m-6P-MhL"/>
                                     <constraint firstItem="9bL-15-KNl" firstAttribute="centerY" secondItem="pbs-Ee-3FN" secondAttribute="centerY" id="NdF-Ch-Wf1"/>
-                                    <constraint firstItem="5fI-z5-kdx" firstAttribute="top" secondItem="pbs-Ee-3FN" secondAttribute="top" constant="25" id="PtW-5U-ZH9"/>
-                                    <constraint firstItem="5fI-z5-kdx" firstAttribute="leading" secondItem="pbs-Ee-3FN" secondAttribute="leading" constant="15" id="Rdz-wX-s7C"/>
+                                    <constraint firstItem="5fI-z5-kdx" firstAttribute="top" secondItem="pbs-Ee-3FN" secondAttribute="top" constant="25" identifier="BB3" id="PtW-5U-ZH9"/>
+                                    <constraint firstItem="5fI-z5-kdx" firstAttribute="leading" secondItem="pbs-Ee-3FN" secondAttribute="leading" constant="15" identifier="BB4" id="Rdz-wX-s7C"/>
+                                    <constraint firstAttribute="trailing" secondItem="9bL-15-KNl" secondAttribute="trailing" id="oy0-y5-zmM"/>
                                     <constraint firstItem="9bL-15-KNl" firstAttribute="centerX" secondItem="pbs-Ee-3FN" secondAttribute="centerX" id="vEA-9k-zhS"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oy0-y5-zmM"/>
+                                    </mask>
+                                </variation>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4B5-wA-ETp">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B5-wA-ETp">
                                 <rect key="frame" x="0.0" y="80" width="600" height="600"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="asB-NH-dBe" userLabel="Feature text.">
-                                        <rect key="frame" x="20" y="266" width="558" height="204"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqt-YL-BXG">
+                                        <rect key="frame" x="557" y="290" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsK-v5-j7F">
+                                        <rect key="frame" x="0.0" y="295" width="599" height="300"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="558" id="JeK-RZ-2SP"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="558" id="mE9-vX-0IT"/>
-                                            <constraint firstAttribute="height" constant="204" id="rR1-mG-Nky"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="204" id="upK-nQ-RSb"/>
-                                        </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <string key="text">Virginia Vacuums is a one-stop superstore for all of your vacuum cleaning needs. Whether you buy off the web or walk into our store, our service will always have the same personalized "neighborhood store" feeling. We offer free shipping for purchases over $50 (Continental US only) and we are an authorized dealer for Miele, Simplicity, and Dirt Devil vacuums.We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner parts, air cleaners, air fresheners, bags, belts, detergent, filters and more! We also offer vacuum cleaner repairs and tune-ups, including custom circuit board fabrication and installation. Because we always want to offer the best experience available, we work hard to provide excellent customer service and many hard to find parts are available right here in our store!</string>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIELE CAPRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKR-kq-MIJ" userLabel="Product Name">
@@ -196,7 +208,7 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                                             <constraint firstAttribute="height" constant="39" id="AgK-1J-Otw"/>
                                             <constraint firstAttribute="width" constant="193" id="i66-Fp-OSF"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -219,22 +231,23 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="asB-NH-dBe" secondAttribute="trailing" constant="22" id="4Ae-Fg-rBE"/>
-                                    <constraint firstAttribute="trailing" secondItem="asB-NH-dBe" secondAttribute="trailing" constant="22" id="4Iz-ca-pS4"/>
+                                    <constraint firstItem="Vqt-YL-BXG" firstAttribute="trailing" secondItem="jsK-v5-j7F" secondAttribute="trailing" id="27o-Ek-jp8"/>
                                     <constraint firstItem="VKR-kq-MIJ" firstAttribute="centerX" secondItem="Cm2-Tx-jJb" secondAttribute="centerX" constant="274.5" id="75v-qZ-OhV"/>
                                     <constraint firstItem="Wjk-hG-B8T" firstAttribute="leading" secondItem="Cm2-Tx-jJb" secondAttribute="leading" id="99w-2E-E1a"/>
+                                    <constraint firstItem="jsK-v5-j7F" firstAttribute="top" secondItem="Wjk-hG-B8T" secondAttribute="bottom" constant="37" id="IuH-VG-NQG"/>
                                     <constraint firstItem="VKR-kq-MIJ" firstAttribute="centerX" secondItem="Cm2-Tx-jJb" secondAttribute="centerX" constant="200" id="JPa-2P-t7X"/>
-                                    <constraint firstAttribute="trailing" secondItem="asB-NH-dBe" secondAttribute="trailing" id="PFG-Hc-9bI"/>
-                                    <constraint firstItem="asB-NH-dBe" firstAttribute="leading" secondItem="Cm2-Tx-jJb" secondAttribute="leading" id="XYF-Ry-nJW"/>
+                                    <constraint firstItem="Vqt-YL-BXG" firstAttribute="centerY" secondItem="4B5-wA-ETp" secondAttribute="centerY" id="P0i-v3-pTw"/>
+                                    <constraint firstItem="Vqt-YL-BXG" firstAttribute="trailing" secondItem="jsK-v5-j7F" secondAttribute="trailing" id="Poj-5k-5UT"/>
+                                    <constraint firstItem="jsK-v5-j7F" firstAttribute="leading" secondItem="4B5-wA-ETp" secondAttribute="leading" id="Xwt-EY-EMw"/>
                                     <constraint firstItem="Wjk-hG-B8T" firstAttribute="top" secondItem="Cm2-Tx-jJb" secondAttribute="bottom" constant="38" id="Yh8-xr-c1a"/>
-                                    <constraint firstItem="asB-NH-dBe" firstAttribute="top" secondItem="Wjk-hG-B8T" secondAttribute="bottom" constant="8" id="aAx-sg-MeD"/>
-                                    <constraint firstAttribute="trailing" secondItem="asB-NH-dBe" secondAttribute="trailing" constant="22" id="dIX-5e-3ci"/>
+                                    <constraint firstAttribute="trailing" secondItem="jsK-v5-j7F" secondAttribute="trailing" constant="1" id="ZGg-du-q4O"/>
                                     <constraint firstItem="Cm2-Tx-jJb" firstAttribute="leading" secondItem="Wjk-hG-B8T" secondAttribute="leading" id="dbY-Lb-L8j"/>
                                     <constraint firstItem="VKR-kq-MIJ" firstAttribute="top" secondItem="4B5-wA-ETp" secondAttribute="top" constant="86" id="fx5-Pa-KHf"/>
-                                    <constraint firstItem="asB-NH-dBe" firstAttribute="leading" secondItem="Wjk-hG-B8T" secondAttribute="leading" id="hoH-tU-hEa"/>
+                                    <constraint firstAttribute="bottom" secondItem="jsK-v5-j7F" secondAttribute="bottom" constant="5" id="hLg-gm-bFM"/>
+                                    <constraint firstAttribute="trailing" secondItem="jsK-v5-j7F" secondAttribute="trailing" constant="1" id="hbw-I0-3AT"/>
                                     <constraint firstItem="Cm2-Tx-jJb" firstAttribute="leading" secondItem="4B5-wA-ETp" secondAttribute="leading" constant="20" id="jcc-7q-niw"/>
                                     <constraint firstItem="VKR-kq-MIJ" firstAttribute="centerX" secondItem="Cm2-Tx-jJb" secondAttribute="centerX" constant="150" id="n1v-gu-gwm"/>
-                                    <constraint firstAttribute="bottom" secondItem="asB-NH-dBe" secondAttribute="bottom" constant="130" id="wgW-vd-lYs"/>
+                                    <constraint firstAttribute="trailing" secondItem="jsK-v5-j7F" secondAttribute="trailing" constant="1" id="r4F-6u-Ks6"/>
                                     <constraint firstItem="Cm2-Tx-jJb" firstAttribute="top" secondItem="4B5-wA-ETp" secondAttribute="top" constant="21" id="xEl-zL-1q6"/>
                                     <constraint firstItem="VKR-kq-MIJ" firstAttribute="leading" secondItem="4B5-wA-ETp" secondAttribute="leading" constant="273" id="ydg-R9-K0I"/>
                                 </constraints>
@@ -243,28 +256,31 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                                         <exclude reference="75v-qZ-OhV"/>
                                         <exclude reference="JPa-2P-t7X"/>
                                         <exclude reference="ydg-R9-K0I"/>
-                                        <exclude reference="4Iz-ca-pS4"/>
-                                        <exclude reference="PFG-Hc-9bI"/>
+                                        <exclude reference="hbw-I0-3AT"/>
                                     </mask>
                                 </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pbs-Ee-3FN" firstAttribute="leading" secondItem="4B5-wA-ETp" secondAttribute="leading" id="0lz-0e-H0D"/>
-                            <constraint firstItem="4B5-wA-ETp" firstAttribute="leading" secondItem="b64-d5-2kL" secondAttribute="leading" id="77O-2g-Eao"/>
-                            <constraint firstAttribute="trailing" secondItem="4B5-wA-ETp" secondAttribute="trailing" id="HFe-d1-XJP"/>
-                            <constraint firstItem="pbs-Ee-3FN" firstAttribute="trailing" secondItem="4B5-wA-ETp" secondAttribute="trailing" id="THx-Ld-Rmz"/>
+                            <constraint firstItem="pbs-Ee-3FN" firstAttribute="leading" secondItem="4B5-wA-ETp" secondAttribute="leading" identifier="ScrollViewID-1" id="0lz-0e-H0D"/>
+                            <constraint firstItem="4B5-wA-ETp" firstAttribute="leading" secondItem="b64-d5-2kL" secondAttribute="leading" identifier="ScrollViewID-3" id="77O-2g-Eao"/>
+                            <constraint firstAttribute="trailing" secondItem="4B5-wA-ETp" secondAttribute="trailing" identifier="ScrollViewID-4" id="HFe-d1-XJP"/>
+                            <constraint firstItem="pbs-Ee-3FN" firstAttribute="trailing" secondItem="4B5-wA-ETp" secondAttribute="trailing" identifier="ScrollViewID-2" id="THx-Ld-Rmz"/>
                             <constraint firstItem="pbs-Ee-3FN" firstAttribute="top" secondItem="b64-d5-2kL" secondAttribute="top" id="TxF-FI-tGE"/>
-                            <constraint firstItem="4B5-wA-ETp" firstAttribute="top" secondItem="wGG-dR-nes" secondAttribute="bottom" constant="60" id="iVp-pR-tje"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="4B5-wA-ETp" secondAttribute="bottom" constant="-80" id="niR-10-TRU"/>
-                            <constraint firstItem="4B5-wA-ETp" firstAttribute="trailing" secondItem="pbs-Ee-3FN" secondAttribute="trailing" id="ufm-qK-bb3"/>
+                            <constraint firstItem="4B5-wA-ETp" firstAttribute="trailing" secondItem="pbs-Ee-3FN" secondAttribute="trailing" identifier="ScrollViewID-5" id="hG3-cD-bg7"/>
+                            <constraint firstItem="4B5-wA-ETp" firstAttribute="top" secondItem="wGG-dR-nes" secondAttribute="bottom" constant="60" identifier="ScrollViewID-6" id="iVp-pR-tje"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="4B5-wA-ETp" secondAttribute="bottom" constant="-80" identifier="ScrollViewID-8" id="niR-10-TRU"/>
+                            <constraint firstItem="4B5-wA-ETp" firstAttribute="trailing" secondItem="pbs-Ee-3FN" secondAttribute="trailing" identifier="ScrollViewID-7" id="ufm-qK-bb3"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <connections>
-                        <outlet property="productFeatureText" destination="asB-NH-dBe" id="IKk-Q7-i3Z"/>
+                        <outlet property="productFeatureText" destination="jsK-v5-j7F" id="FMQ-yR-KWX"/>
                         <outlet property="productImageView" destination="Cm2-Tx-jJb" id="gSr-yA-oii"/>
                         <outlet property="productNameLabel" destination="VKR-kq-MIJ" id="flL-hj-eHn"/>
+                        <outlet property="scrollView" destination="4B5-wA-ETp" id="eHr-pz-QZk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="swm-oa-tR5" userLabel="First Responder" sceneMemberID="firstResponder"/>

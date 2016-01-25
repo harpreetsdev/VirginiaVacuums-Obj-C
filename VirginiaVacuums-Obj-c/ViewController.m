@@ -75,14 +75,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"menuToDetail"]) {
-        
-        ProductDetailViewController *viewController = [segue destinationViewController];
-        //[self presentViewController:viewController animated:YES completion:nil];
-        
-       }
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([[segue identifier] isEqualToString:@"menuToDetail"]) {
+//        
+//        ProductDetailViewController *viewController = [segue destinationViewController];
+//        //[self presentViewController:viewController animated:YES completion:nil];
+//        
+//       }
+//}
 
 @end
