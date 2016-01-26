@@ -6,87 +6,87 @@
  "menuScreenTitle":"VACUUM CLEANERS",
  "detailPageProductTitle":"MIELE CAPRI",
  "cellImage":"MenuVacimage",
- "detailPageProductImage":"",
- "productFeatureText":""
+ "detailPageProductImage":"MIELELLBAGS.jpg",
+ "productFeatureText":"Available only through authorized retailers, Simplicity Jack is a compact canister vacuum manufactured by the Simplicity Company. Simplicity has built its reputation on building vacuums without extra gadgets that can break and make life difficult. They simply build a great vacuum and then back it with an exceptional 2 year warranty."
 },
  {
- "seq":"",
- "fetch":"",
+ "seq":"2",
+ "fetch":"no",
  "productType":"VacuumCleaner",
  "menuScreenTitle":"",
- "detailPageProductTitle":"",
+ "detailPageProductTitle":"SIMPLICITY SNAP",
  "cellImage":"",
- "detailPageProductImage":"",
- "productFeatureText":""
+ "detailPageProductImage":"SimplicitySNAP",
+ "productFeatureText":"Featuring A full 12 amps of cleaning power and a  100% Sealed, 7-stage, S-Class HEPA filtration system with an impressive 5 Year bumper to bumper Repair Warranty, Moxie would be an ideal Vacuum for Mid to Large Sized houses with Kids and  Pets."
  },
  {
- "seq":"2",
+ "seq":"3",
  "fetch":"yes",
  "productType":"AirPurifier",
  "menuScreenTitle":"AIR PURIFIERS",
  "detailPageProductTitle":"",
  "cellImage":"MenuAirPurifierImg",
- "detailPageProductImage":"",
- "productFeatureText":""
+ "detailPageProductImage":"SimplicityJack",
+ "productFeatureText":"The Miele S194 QuickStep is the newest addition to the Miele S1 line of stick vacuums. This machine is a convenient upright style vacuum that is compact and lightweight at just 9 pounds. The S194 is perfect for small apartments, city lofts, dorm rooms, home or small offices, or as a second vacuum. "
  },
  {
- "seq":"",
+ "seq":"4",
  "fetch":"",
  "productType":"AirPurifier",
  "menuScreenTitle":"AIR PURIFIERS",
- "detailPageProductTitle":"",
+ "detailPageProductTitle":"AUSTIN POWERS",
  "cellImage":"",
- "detailPageProductImage":"",
- "productFeatureText":""
+ "detailPageProductImage":"SimplicityCINCH",
+ "productFeatureText":"Available only through authorized retailers, Simplicity Jack is a compact canister vacuum manufactured by the Simplicity Company. Simplicity has built its reputation on building vacuums without extra gadgets that can break and make life difficult. They simply build a great vacuum and then back it with an exceptional 2 year warranty."
  },
  {
- "seq":"",
+ "seq":"5",
  "fetch":"",
  "productType":"AirPurifier",
  "menuScreenTitle":"",
- "detailPageProductTitle":"",
+ "detailPageProductTitle":"SIMPLICITY MOXIE",
  "cellImage":"",
- "detailPageProductImage":"",
- "productFeatureText":""
+ "detailPageProductImage":"SimplicityMOXIE",
+ "productFeatureText":"The Miele S 7580 AutoEco is an extraordinary cleaning machine and is the newest member of the distinguished Miele S7 upright vacuum line. The S7 AutoEco joins the successful Miele S7 upright line of vacuums as the eco-friendy, energy-saving upright that carries the same innovative features found in the rest of this impressive vacuum line. As the hummingbird emblem embossed on the front of the obsidian black vacuum alludes to, this machine is smart and efficient like nature's fastest, most maneuverable avian. Just as the hummingbird lowers its heart rate dramatically while at rest, the S7 AutoEco upright vacuum smartly adjusts its power consumption for individual cleaning needs when the Automatic power setting is chosen."
  },
  {
- "seq":"",
+ "seq":"6",
  "fetch":"",
  "productType":"VacuumCleaner",
  "menuScreenTitle":"",
  "detailPageProductTitle":"",
  "cellImage":"",
- "detailPageProductImage":"",
- "productFeatureText":""
+ "detailPageProductImage":"SimplicityVerve",
+ "productFeatureText":"The Miele S 7580 AutoEco is an extraordinary cleaning machine and is the newest member of the distinguished Miele S7 upright vacuum line. The S7 AutoEco joins the successful Miele S7 upright line of vacuums as the eco-friendy, energy-saving upright that carries the same innovative features found in the rest of this impressive vacuum line. As the hummingbird emblem embossed on the front of the obsidian black vacuum alludes to, this machine is smart and efficient like nature's fastest, most maneuverable avian. Just as the hummingbird lowers its heart rate dramatically while at rest, the S7 AutoEco upright vacuum smartly adjusts its power consumption for individual cleaning needs when the Automatic power setting is chosen."
  },
  {
- "seq":"3",
+ "seq":"7",
  "fetch":"yes",
  "productType":"ReplacementPart",
  "menuScreenTitle":"REPLACEMENTS PARTS",
  "detailPageProductTitle":"",
  "cellImage":"MenuReplacementPartsImg",
  "detailPageProductImage":"",
- "productFeatureText":""
+ "productFeatureText":"The Miele S194 QuickStep is the newest addition to the Miele S1 line of stick vacuums. This machine is a convenient upright style vacuum that is compact and lightweight at just 9 pounds. The S194 is perfect for small apartments, city lofts, dorm rooms, home or small offices, or as a second vacuum."
  },
  {
- "seq":"",
+ "seq":"8",
  "fetch":"",
  "productType":"ReplacementPart",
  "menuScreenTitle":"",
  "detailPageProductTitle":"",
  "cellImage":"",
- "detailPageProductImage":"",
- "productFeatureText":""
+ "detailPageProductImage":"SimplicityJack",
+ "productFeatureText":"The Miele S 7580 AutoEco is an extraordinary cleaning machine and is the newest member of the distinguished Miele S7 upright vacuum line. The S7 AutoEco joins the successful Miele S7 upright line of vacuums as the eco-friendy, energy-saving upright that carries the same innovative features found in the rest of this impressive vacuum line. As the hummingbird emblem embossed on the front of the obsidian black vacuum alludes to, this machine is smart and efficient like nature's fastest, most maneuverable avian. Just as the hummingbird lowers its heart rate dramatically while at rest, the S7 AutoEco upright vacuum smartly adjusts its power consumption for individual cleaning needs when the Automatic power setting is chosen. "
  },
  {
- "seq":"",
+ "seq":"9",
  "fetch":"",
  "productType":"ReplacementPart",
  "menuScreenTitle":"",
  "detailPageProductTitle":"",
  "cellImage":"",
- "detailPageProductImage":"",
- "productFeatureText":""
+ "detailPageProductImage":"SimplicityVerve",
+ "productFeatureText":"The Miele S194 QuickStep is the newest addition to the Miele S1 line of stick vacuums. This machine is a convenient upright style vacuum that is compact and lightweight at just 9 pounds. The S194 is perfect for small apartments, city lofts, dorm rooms, home or small offices, or as a second vacuum."
  }
 ]

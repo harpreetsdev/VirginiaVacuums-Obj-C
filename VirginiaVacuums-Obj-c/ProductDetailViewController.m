@@ -17,17 +17,25 @@
 @end
 
 @implementation ProductDetailViewController
-
+@synthesize productImageView = _productImageView;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setUpView];
+    
 }
 
 - (void) setUpView {
     
     self.scrollView.contentSize = CGSizeMake(600, self.productFeatureText.frame.origin.y + self.productFeatureText.frame.size.height + 60);
+    NSString *imageNameString = [NSString stringWithFormat:@"SimplicityVerve.jpg"];
+    UIImage *image = [UIImage imageNamed:imageNameString];
+    UIImageView *imageView1 = [[UIImageView alloc] initWithImage:image];
+    imageView1 = self.productImageView;
+    
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

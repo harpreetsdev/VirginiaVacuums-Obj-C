@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIView.h>
+#import <UIKit/UIKitDefines.h>
 
 @interface ProductDetailViewController : UIViewController
 

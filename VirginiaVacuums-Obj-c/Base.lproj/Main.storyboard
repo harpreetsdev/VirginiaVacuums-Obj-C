@@ -21,11 +21,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huT-c4-6WJ" userLabel="Header View">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Products Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMv-VN-YU6" userLabel="Page Title">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Products Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMv-VN-YU6" userLabel="Page Title">
                                         <rect key="frame" x="200" y="30" width="200" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="Gp8-mp-nur"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -223,7 +220,7 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SimplicityMOXIE" translatesAutoresizingMaskIntoConstraints="NO" id="Cm2-Tx-jJb" userLabel="Product Image">
+                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SimplicityCINCH.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Cm2-Tx-jJb" userLabel="Product Image">
                                         <rect key="frame" x="20" y="21" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="Wnr-j4-v8q"/>
@@ -278,11 +275,11 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="nse-SS-DdK"/>
-                                        <exclude reference="hbw-I0-3AT"/>
                                         <exclude reference="75v-qZ-OhV"/>
                                         <exclude reference="JPa-2P-t7X"/>
                                         <exclude reference="ydg-R9-K0I"/>
                                         <exclude reference="6mc-Bt-Wpx"/>
+                                        <exclude reference="hbw-I0-3AT"/>
                                     </mask>
                                 </variation>
                             </scrollView>
@@ -313,8 +310,7 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
-                        <outlet property="productFeatureText" destination="jsK-v5-j7F" id="FMQ-yR-KWX"/>
-                        <outlet property="productImageView" destination="Cm2-Tx-jJb" id="gSr-yA-oii"/>
+                        <outlet property="productImageView" destination="Cm2-Tx-jJb" id="Vcn-bK-uJg"/>
                         <outlet property="productNameLabel" destination="VKR-kq-MIJ" id="flL-hj-eHn"/>
                         <outlet property="scrollView" destination="4B5-wA-ETp" id="eHr-pz-QZk"/>
                     </connections>
@@ -327,6 +323,6 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
     <resources>
         <image name="BackArrow" width="14" height="26"/>
         <image name="MenuVacimage" width="72" height="72"/>
-        <image name="SimplicityMOXIE" width="1500" height="1891"/>
+        <image name="SimplicityCINCH.jpg" width="287" height="300"/>
     </resources>
 </document>
