@@ -68,6 +68,13 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"menuToDetail" sender:nil];
+    
+    ProductDetail *productDetail = [serviceFactory.menuFetchedResultsController objectAtIndexPath:indexPath];
+    
+    PageViewController *pageViewController = [[PageViewController alloc] init];
+    pageViewController.productIndex = [indexPath row];
+    pageViewController.productType = [productDetail productType];
+    
 }
 
 - (void)didReceiveMemoryWarning {

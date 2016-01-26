@@ -69,7 +69,7 @@
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <segue destination="933-lv-XFU" kind="presentation" identifier="menuToDetail" modalTransitionStyle="flipHorizontal" id="KPn-3a-ea7"/>
+                                                    <segue destination="08b-2l-73R" kind="presentation" identifier="menuToDetail" modalTransitionStyle="flipHorizontal" id="vHd-rx-VjU"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -317,7 +317,25 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="swm-oa-tR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-156" y="596"/>
+            <point key="canvasLocation" x="-645" y="1166"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="ZgY-bT-J5F">
+            <objects>
+                <viewController id="08b-2l-73R" userLabel="Page View Controller" customClass="UIPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NdL-87-D3Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="aWD-BP-ILH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GSj-NB-rhC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMB-Vm-xn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="625"/>
         </scene>
     </scenes>
     <resources>

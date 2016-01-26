@@ -138,7 +138,7 @@
     return _vacuumCleanerArray;
 }
 
-- (NSArray *)airPurifierArray
+- (NSArray *)airPurifierArray 
 {
     if (_airPurifierArray == nil) {
         

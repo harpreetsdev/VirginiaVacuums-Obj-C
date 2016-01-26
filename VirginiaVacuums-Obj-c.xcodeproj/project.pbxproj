@@ -18,6 +18,7 @@
 		105811861C5708E00065837C /* SimplicityMOXIE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1058117D1C5708E00065837C /* SimplicityMOXIE.jpg */; };
 		105811871C5708E00065837C /* MIELECANISTERATTACHMENTS.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1058117E1C5708E00065837C /* MIELECANISTERATTACHMENTS.JPG */; };
 		105811881C5708E00065837C /* SimplicitySNAP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1058117F1C5708E00065837C /* SimplicitySNAP.jpg */; };
+		10C6B28A1C5830F90082B4C1 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6B2891C5830F90082B4C1 /* PageViewController.m */; };
 		10DF5AD01C507E0600519A70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5ACF1C507E0600519A70 /* main.m */; };
 		10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AD21C507E0600519A70 /* AppDelegate.m */; };
 		10DF5AD61C507E0600519A70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AD51C507E0600519A70 /* ViewController.m */; };
@@ -63,6 +64,8 @@
 		1058117D1C5708E00065837C /* SimplicityMOXIE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimplicityMOXIE.jpg; sourceTree = "<group>"; };
 		1058117E1C5708E00065837C /* MIELECANISTERATTACHMENTS.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MIELECANISTERATTACHMENTS.JPG; sourceTree = "<group>"; };
 		1058117F1C5708E00065837C /* SimplicitySNAP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimplicitySNAP.jpg; sourceTree = "<group>"; };
+		10C6B2881C5830F90082B4C1 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		10C6B2891C5830F90082B4C1 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 		10DF5ACB1C507E0600519A70 /* VirginiaVacuums-Obj-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VirginiaVacuums-Obj-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DF5ACF1C507E0600519A70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10DF5AD11C507E0600519A70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				10DF5AD51C507E0600519A70 /* ViewController.m */,
 				10E934691C5558E70021B010 /* ProductDetailViewController.h */,
 				10E9346A1C5558E70021B010 /* ProductDetailViewController.m */,
+				10C6B2881C5830F90082B4C1 /* PageViewController.h */,
+				10C6B2891C5830F90082B4C1 /* PageViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 			files = (
 				10DF5AD61C507E0600519A70 /* ViewController.m in Sources */,
 				10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */,
+				10C6B28A1C5830F90082B4C1 /* PageViewController.m in Sources */,
 				10DF5AD01C507E0600519A70 /* main.m in Sources */,
 				10E9346B1C5558E70021B010 /* ProductDetailViewController.m in Sources */,
 				101C66621C552D9900901778 /* ProductDetail.m in Sources */,
