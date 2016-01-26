@@ -133,7 +133,7 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
         <!--Product Detail View Controller-->
         <scene sceneID="Bkw-oM-5na">
             <objects>
-                <viewController id="933-lv-XFU" userLabel="Product Detail View Controller" customClass="ProductDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageContentViewController" id="933-lv-XFU" userLabel="Product Detail View Controller" customClass="ProductDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wGG-dR-nes"/>
                         <viewControllerLayoutGuide type="bottom" id="piR-pP-t63"/>

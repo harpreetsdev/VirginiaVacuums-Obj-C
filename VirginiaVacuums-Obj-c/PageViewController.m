@@ -46,6 +46,40 @@
 
 }
 
+#pragma mark - Page View Controller Data Source Delegate Methods
+
+- (ProductDetailViewController *)viewControllerAtIndex:(NSUInteger)index isBefore:(BOOL)beforeIndicator after:(BOOL)afterIndicator {
+    if (([self.productArray count] == 0) || (index >= [self.productArray count])) {
+        return nil;
+    }
+    ProductDetailViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
+        pageContentViewController.productType = self.productType;
+        pageContentViewController.productIndex = index;
+    
+       return pageContentViewController;
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
+    NSUInteger index = ((ProductDetailViewController *) viewController).productIndex;
+    if ((index == 0) || (index == NSNotFound)) {
+        return nil;
+    }
+    index--;
+    return [self viewControllerAtIndex:index isBefore:YES after:NO];
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
+    NSUInteger index = ((ProductDetailViewController *) viewController).productIndex;
+    if (index == NSNotFound) {
+        return nil;
+    }
+    index++;
+    if (index == [self.productArray count]) {
+        return nil;
+    }
+    return [self viewControllerAtIndex:index isBefore:NO after:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

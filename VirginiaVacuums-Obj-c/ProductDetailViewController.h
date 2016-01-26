@@ -13,4 +13,9 @@
 
 @interface ProductDetailViewController : UIViewController
 
+@property (strong, nonatomic) NSString *productType;
+@property (nonatomic) NSInteger productIndex;
+
+
+
 @end
