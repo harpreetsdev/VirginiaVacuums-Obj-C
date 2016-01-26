@@ -46,19 +46,19 @@
 
 @end
 
-@interface NSLayoutConstraint (Description);
-
-@end
-
-@implementation NSLayoutConstraint (Description)
-
--(NSString *)description {
-    return [NSString stringWithFormat:@"id: %@, constant: %f", self.identifier, self.constant];
-}
-
-
-@end
-
+//@interface NSLayoutConstraint (Description);
+//
+//@end
+//
+//@implementation NSLayoutConstraint (Description)
+//
+//-(NSString *)description {
+//    return [NSString stringWithFormat:@"id: %@, constant: %f", self.identifier, self.constant];
+//}
+//
+//
+//@end
+//
 
 
 
