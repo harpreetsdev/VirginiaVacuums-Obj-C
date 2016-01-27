@@ -65,9 +65,36 @@
 
 }
 
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //[self performSegueWithIdentifier:@"menuToDetail" sender:self];
+    ProductDetailViewController *pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
+
+    
+    ProductDetail *productDetail = [serviceFactory.menuFetchedResultsController objectAtIndexPath:indexPath];
+//    pageViewController.productIndex = [indexPath row];
+//    pageViewController.productType = [productDetail productType];
+    
+    [self presentViewController:pageViewController animated:YES completion:nil];
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([[segue identifier] isEqualToString:@"menuToDetail"]) {
+//        
+//        NSIndexPath *indexPath = self.productsTableView.indexPathForSelectedRow;
+//        ProductDetail *productDetail = [serviceFactory.menuFetchedResultsController objectAtIndexPath:indexPath];
+//
+//        ProductDetailViewController *viewController = [segue destinationViewController];
+//        viewController.productIndex = [indexPath row];
+//        viewController.productType = [productDetail productType];
+//       }
+//}
 
 @end
