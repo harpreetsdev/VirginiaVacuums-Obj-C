@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIView.h>
 #import <UIKit/UIKitDefines.h>
+#import "ServiceFactory.h"
 
 @interface ProductDetailViewController : UIViewController
 

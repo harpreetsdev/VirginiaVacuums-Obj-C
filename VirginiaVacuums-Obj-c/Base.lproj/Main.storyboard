@@ -322,7 +322,7 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
         <!--Page View Controller-->
         <scene sceneID="ZgY-bT-J5F">
             <objects>
-                <viewController id="08b-2l-73R" userLabel="Page View Controller" customClass="UIPageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageViewController" id="08b-2l-73R" userLabel="Page View Controller" customClass="PageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NdL-87-D3Z"/>
                         <viewControllerLayoutGuide type="bottom" id="aWD-BP-ILH"/>
@@ -336,6 +336,32 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMB-Vm-xn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137" y="625"/>
+        </scene>
+        <!--Product Category-->
+        <scene sceneID="vbL-cw-bz4">
+            <objects>
+                <viewController id="otF-6n-HDK" userLabel="Product Category" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aJf-jJ-dok"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dkn-MG-nGW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z5E-1Y-BjI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0S-WS-95R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="1335"/>
+        </scene>
+        <!--Page View Handler-->
+        <scene sceneID="nm4-Tw-J0N">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewHandler" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="A8N-Ij-6n8" userLabel="Page View Handler" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ggc-3x-WHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535" y="2252"/>
         </scene>
     </scenes>
     <resources>

@@ -67,13 +67,15 @@
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"menuToDetail" sender:nil];
+    //[self performSegueWithIdentifier:@"menuToDetail" sender:self];
+    ProductDetailViewController *pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
+
     
     ProductDetail *productDetail = [serviceFactory.menuFetchedResultsController objectAtIndexPath:indexPath];
+//    pageViewController.productIndex = [indexPath row];
+//    pageViewController.productType = [productDetail productType];
     
-    PageViewController *pageViewController = [[PageViewController alloc] init];
-    pageViewController.productIndex = [indexPath row];
-    pageViewController.productType = [productDetail productType];
+    [self presentViewController:pageViewController animated:YES completion:nil];
     
 }
 
@@ -86,9 +88,12 @@
 //{
 //    if ([[segue identifier] isEqualToString:@"menuToDetail"]) {
 //        
+//        NSIndexPath *indexPath = self.productsTableView.indexPathForSelectedRow;
+//        ProductDetail *productDetail = [serviceFactory.menuFetchedResultsController objectAtIndexPath:indexPath];
+//
 //        ProductDetailViewController *viewController = [segue destinationViewController];
-//        //[self presentViewController:viewController animated:YES completion:nil];
-//        
+//        viewController.productIndex = [indexPath row];
+//        viewController.productType = [productDetail productType];
 //       }
 //}
 

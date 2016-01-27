@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UITextView *productFeatureText;
 
+
+
 @end
 
 @implementation ProductDetailViewController
@@ -21,19 +23,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setUpView];
+    [self bindVacuumViews];
     
 }
 
 - (void) setUpView {
     
     self.scrollView.contentSize = CGSizeMake(600, self.productFeatureText.frame.origin.y + self.productFeatureText.frame.size.height + 60);
+    
     NSString *imageNameString = [NSString stringWithFormat:@"SimplicityVerve.jpg"];
     UIImage *image = [UIImage imageNamed:imageNameString];
     UIImageView *imageView1 = [[UIImageView alloc] initWithImage:image];
     imageView1 = self.productImageView;
     
     
+}
+
+- (void) bindVacuumViews {
+    NSString *imageString = [[[ServiceFactory sharedInstance] vacuumCleanerArray][self.productIndex] valueForKey:@"productDetailPageImg"];
+    UIImage *prodImg = [UIImage imageNamed:imageString];
+    self.productImageView.image = prodImg;
+    self.productNameLabel.text = [[[ServiceFactory sharedInstance] vacuumCleanerArray][self.productIndex] valueForKey:@"productDetailPageTitle"];
+    self.productFeatureText.text = [[[ServiceFactory sharedInstance] vacuumCleanerArray][self.productIndex] valueForKey:@"productFeatureText"];
 }
 
 

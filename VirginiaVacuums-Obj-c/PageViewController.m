@@ -11,13 +11,15 @@
 @interface PageViewController ()
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
-
 @property (strong, nonatomic) NSArray *productArray;
 
 @end
 
 @implementation PageViewController
 
+- (void)setProductIndex:(NSInteger)productIndex {
+    _productIndex = productIndex;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -33,8 +35,9 @@
     } else if ([self.productType isEqualToString:@"ReplacementPart"]) {
         self.productArray = [[ServiceFactory sharedInstance] replacementPartsArray];
     }
-    
-    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
+    self.productArray = [[ServiceFactory sharedInstance] vacuumCleanerArray];
+
+    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewHandler"];
     self.pageViewController.delegate = self;
     self.pageViewController.dataSource = self;
     ProductDetailViewController *initialViewController = [self viewControllerAtIndex:self.productIndex isBefore:NO after:NO];
