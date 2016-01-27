@@ -16,10 +16,10 @@
 
 
 
+
 @end
 
 @implementation ProductDetailViewController
-@synthesize productImageView = _productImageView;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -31,11 +31,6 @@
     
     self.scrollView.contentSize = CGSizeMake(600, self.productFeatureText.frame.origin.y + self.productFeatureText.frame.size.height + 60);
     
-    NSString *imageNameString = [NSString stringWithFormat:@"SimplicityVerve.jpg"];
-    UIImage *image = [UIImage imageNamed:imageNameString];
-    UIImageView *imageView1 = [[UIImageView alloc] initWithImage:image];
-    imageView1 = self.productImageView;
-    
     
 }
 
@@ -45,6 +40,8 @@
     self.productImageView.image = prodImg;
     self.productNameLabel.text = [[[ServiceFactory sharedInstance] vacuumCleanerArray][self.productIndex] valueForKey:@"productDetailPageTitle"];
     self.productFeatureText.text = [[[ServiceFactory sharedInstance] vacuumCleanerArray][self.productIndex] valueForKey:@"productFeatureText"];
+    UIFont *font = [UIFont fontWithName:@"Helvetica Neue" size:18.0];
+    self.productFeatureText.font = font;
 }
 
 

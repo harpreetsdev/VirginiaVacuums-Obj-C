@@ -207,7 +207,7 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                                             <constraint firstAttribute="width" constant="280" id="k0f-wX-ExF"/>
                                         </constraints>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIELE CAPRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKR-kq-MIJ" userLabel="Product Name">
@@ -310,6 +310,7 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
+                        <outlet property="productFeatureText" destination="qVb-J9-dUE" id="Uho-Rv-SbN"/>
                         <outlet property="productImageView" destination="Cm2-Tx-jJb" id="Vcn-bK-uJg"/>
                         <outlet property="productNameLabel" destination="VKR-kq-MIJ" id="flL-hj-eHn"/>
                         <outlet property="scrollView" destination="4B5-wA-ETp" id="eHr-pz-QZk"/>
