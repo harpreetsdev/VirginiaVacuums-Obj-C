@@ -21,11 +21,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huT-c4-6WJ" userLabel="Header View">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Products Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMv-VN-YU6" userLabel="Page Title">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Products Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMv-VN-YU6" userLabel="Page Title">
                                         <rect key="frame" x="200" y="30" width="200" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="Gp8-mp-nur"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -71,6 +68,9 @@
                                                         </imageView>
                                                     </subviews>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <segue destination="08b-2l-73R" kind="presentation" identifier="menuToDetail" modalTransitionStyle="flipHorizontal" id="vHd-rx-VjU"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -128,10 +128,245 @@ We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="472" y="545"/>
+            <point key="canvasLocation" x="-1369" y="596"/>
+        </scene>
+        <!--Product Detail View Controller-->
+        <scene sceneID="Bkw-oM-5na">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" id="933-lv-XFU" userLabel="Product Detail View Controller" customClass="ProductDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wGG-dR-nes"/>
+                        <viewControllerLayoutGuide type="bottom" id="piR-pP-t63"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="b64-d5-2kL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbs-Ee-3FN" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fI-z5-kdx" userLabel="BackButton">
+                                        <rect key="frame" x="15" y="25" width="40" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" identifier="BB1" id="bWE-iW-SPr"/>
+                                        </constraints>
+                                        <state key="normal" image="BackArrow"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="bWE-iW-SPr"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Products Detail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bL-15-KNl" userLabel="Page Title">
+                                        <rect key="frame" x="200" y="25" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="2eP-sr-zBb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.69359456809999998" green="0.17712639529999999" blue="0.2380396062" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5fI-z5-kdx" secondAttribute="trailing" priority="999" constant="545" identifier="BB2" id="4oa-oB-M6d"/>
+                                    <constraint firstAttribute="height" constant="80" id="80m-6P-MhL"/>
+                                    <constraint firstItem="9bL-15-KNl" firstAttribute="centerY" secondItem="pbs-Ee-3FN" secondAttribute="centerY" id="NdF-Ch-Wf1"/>
+                                    <constraint firstItem="5fI-z5-kdx" firstAttribute="top" secondItem="pbs-Ee-3FN" secondAttribute="top" constant="25" identifier="BB3" id="PtW-5U-ZH9"/>
+                                    <constraint firstItem="5fI-z5-kdx" firstAttribute="leading" secondItem="pbs-Ee-3FN" secondAttribute="leading" constant="15" identifier="BB4" id="Rdz-wX-s7C"/>
+                                    <constraint firstAttribute="trailing" secondItem="9bL-15-KNl" secondAttribute="trailing" id="oy0-y5-zmM"/>
+                                    <constraint firstItem="9bL-15-KNl" firstAttribute="centerX" secondItem="pbs-Ee-3FN" secondAttribute="centerX" id="vEA-9k-zhS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oy0-y5-zmM"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B5-wA-ETp">
+                                <rect key="frame" x="0.0" y="80" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqt-YL-BXG">
+                                        <rect key="frame" x="0.0" y="146" width="600" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsK-v5-j7F">
+                                        <rect key="frame" x="0.0" y="295" width="600" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Virginia Vacuums is a one-stop superstore for all of your vacuum cleaning needs. Whether you buy off the web or walk into our store, our service will always have the same personalized "neighborhood store" feeling. We offer free shipping for purchases over $50 (Continental US only) and we are an authorized dealer for Miele, Simplicity, and Dirt Devil vacuums.We offer new and refurbished vacuum cleaners as well as the best vacuum cleaner parts, air cleaners, air fresheners, bags, belts, detergent, filters and more! We also offer vacuum cleaner repairs and tune-ups, including custom circuit board fabrication and installation. Because we always want to offer the best experience available, we work hard to provide excellent customer service and many hard to find parts are available right here in our store!</string>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVb-J9-dUE">
+                                        <rect key="frame" x="20" y="296" width="280" height="300"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="f8B-Tr-2KJ"/>
+                                            <constraint firstAttribute="width" constant="280" id="k0f-wX-ExF"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIELE CAPRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKR-kq-MIJ" userLabel="Product Name">
+                                        <rect key="frame" x="149" y="86" width="193" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="AgK-1J-Otw"/>
+                                            <constraint firstAttribute="width" constant="193" id="i66-Fp-OSF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SimplicityCINCH.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Cm2-Tx-jJb" userLabel="Product Image">
+                                        <rect key="frame" x="20" y="21" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="Wnr-j4-v8q"/>
+                                            <constraint firstAttribute="width" constant="150" id="qCF-jE-UYY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEATURES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjk-hG-B8T" userLabel="FEATURES">
+                                        <rect key="frame" x="20" y="209" width="182" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="WX8-2n-dMX"/>
+                                            <constraint firstAttribute="width" constant="182" id="uxD-OQ-2b5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Vqt-YL-BXG" firstAttribute="trailing" secondItem="jsK-v5-j7F" secondAttribute="trailing" constant="-1" id="27o-Ek-jp8"/>
+                                    <constraint firstAttribute="trailing" secondItem="qVb-J9-dUE" secondAttribute="trailing" constant="20" id="6mc-Bt-Wpx"/>
+                                    <constraint firstItem="VKR-kq-MIJ" firstAttribute="centerX" secondItem="Cm2-Tx-jJb" secondAttribute="centerX" constant="274.5" id="75v-qZ-OhV"/>
+                                    <constraint firstItem="Wjk-hG-B8T" firstAttribute="leading" secondItem="Cm2-Tx-jJb" secondAttribute="leading" id="99w-2E-E1a"/>
+                                    <constraint firstItem="jsK-v5-j7F" firstAttribute="top" secondItem="Wjk-hG-B8T" secondAttribute="bottom" constant="37" id="IuH-VG-NQG"/>
+                                    <constraint firstItem="VKR-kq-MIJ" firstAttribute="centerX" secondItem="Cm2-Tx-jJb" secondAttribute="centerX" constant="200" id="JPa-2P-t7X"/>
+                                    <constraint firstItem="Vqt-YL-BXG" firstAttribute="centerY" secondItem="4B5-wA-ETp" secondAttribute="centerY" constant="-154.5" id="P0i-v3-pTw"/>
+                                    <constraint firstItem="Vqt-YL-BXG" firstAttribute="trailing" secondItem="jsK-v5-j7F" secondAttribute="trailing" constant="-1" id="Poj-5k-5UT"/>
+                                    <constraint firstItem="qVb-J9-dUE" firstAttribute="top" secondItem="Wjk-hG-B8T" secondAttribute="bottom" constant="38" id="Xvi-WP-XrO"/>
+                                    <constraint firstItem="jsK-v5-j7F" firstAttribute="leading" secondItem="4B5-wA-ETp" secondAttribute="leading" id="Xwt-EY-EMw"/>
+                                    <constraint firstItem="qVb-J9-dUE" firstAttribute="leading" secondItem="4B5-wA-ETp" secondAttribute="leading" constant="20" id="YGQ-tB-Ayy"/>
+                                    <constraint firstItem="Wjk-hG-B8T" firstAttribute="top" secondItem="Cm2-Tx-jJb" secondAttribute="bottom" constant="38" id="Yh8-xr-c1a"/>
+                                    <constraint firstAttribute="trailing" secondItem="jsK-v5-j7F" secondAttribute="trailing" id="ZGg-du-q4O"/>
+                                    <constraint firstAttribute="trailing" secondItem="qVb-J9-dUE" secondAttribute="trailing" constant="20" id="ZRq-kh-cdg"/>
+                                    <constraint firstItem="Cm2-Tx-jJb" firstAttribute="leading" secondItem="Wjk-hG-B8T" secondAttribute="leading" id="dbY-Lb-L8j"/>
+                                    <constraint firstItem="VKR-kq-MIJ" firstAttribute="top" secondItem="4B5-wA-ETp" secondAttribute="top" constant="86" id="fx5-Pa-KHf"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vqt-YL-BXG" secondAttribute="bottom" constant="309" id="h8S-U2-ZXe"/>
+                                    <constraint firstAttribute="bottom" secondItem="jsK-v5-j7F" secondAttribute="bottom" constant="269" id="hLg-gm-bFM"/>
+                                    <constraint firstAttribute="trailing" secondItem="jsK-v5-j7F" secondAttribute="trailing" constant="1" id="hbw-I0-3AT"/>
+                                    <constraint firstItem="Cm2-Tx-jJb" firstAttribute="leading" secondItem="4B5-wA-ETp" secondAttribute="leading" constant="20" id="jcc-7q-niw"/>
+                                    <constraint firstItem="VKR-kq-MIJ" firstAttribute="centerX" secondItem="Cm2-Tx-jJb" secondAttribute="centerX" constant="150" id="n1v-gu-gwm"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vqt-YL-BXG" secondAttribute="trailing" id="nse-SS-DdK"/>
+                                    <constraint firstAttribute="bottom" secondItem="qVb-J9-dUE" secondAttribute="bottom" constant="4" id="qXN-n2-qcg"/>
+                                    <constraint firstAttribute="trailing" secondItem="jsK-v5-j7F" secondAttribute="trailing" id="r4F-6u-Ks6"/>
+                                    <constraint firstItem="qVb-J9-dUE" firstAttribute="trailing" secondItem="Vqt-YL-BXG" secondAttribute="trailing" priority="999" constant="-20" id="sEE-e6-yhh"/>
+                                    <constraint firstItem="Cm2-Tx-jJb" firstAttribute="top" secondItem="4B5-wA-ETp" secondAttribute="top" constant="21" id="xEl-zL-1q6"/>
+                                    <constraint firstItem="Vqt-YL-BXG" firstAttribute="leading" secondItem="4B5-wA-ETp" secondAttribute="leading" id="yZR-qq-ZZl"/>
+                                    <constraint firstItem="VKR-kq-MIJ" firstAttribute="leading" secondItem="4B5-wA-ETp" secondAttribute="leading" constant="273" id="ydg-R9-K0I"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Vqt-YL-BXG"/>
+                                        <exclude reference="jsK-v5-j7F"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="nse-SS-DdK"/>
+                                        <exclude reference="75v-qZ-OhV"/>
+                                        <exclude reference="JPa-2P-t7X"/>
+                                        <exclude reference="ydg-R9-K0I"/>
+                                        <exclude reference="6mc-Bt-Wpx"/>
+                                        <exclude reference="hbw-I0-3AT"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="4B5-wA-ETp" secondAttribute="bottom" constant="-80" id="0TL-nF-hwO"/>
+                            <constraint firstItem="pbs-Ee-3FN" firstAttribute="leading" secondItem="4B5-wA-ETp" secondAttribute="leading" identifier="ScrollViewID-1" id="0lz-0e-H0D"/>
+                            <constraint firstItem="4B5-wA-ETp" firstAttribute="leading" secondItem="b64-d5-2kL" secondAttribute="leading" identifier="ScrollViewID-3" id="77O-2g-Eao"/>
+                            <constraint firstItem="4B5-wA-ETp" firstAttribute="centerY" secondItem="b64-d5-2kL" secondAttribute="centerY" constant="80" id="7yr-bG-v22"/>
+                            <constraint firstAttribute="trailing" secondItem="4B5-wA-ETp" secondAttribute="trailing" identifier="ScrollViewID-4" id="HFe-d1-XJP"/>
+                            <constraint firstItem="4B5-wA-ETp" firstAttribute="centerX" secondItem="pbs-Ee-3FN" secondAttribute="centerX" id="Oaa-Se-sUO"/>
+                            <constraint firstItem="pbs-Ee-3FN" firstAttribute="trailing" secondItem="4B5-wA-ETp" secondAttribute="trailing" identifier="ScrollViewID-2" id="THx-Ld-Rmz"/>
+                            <constraint firstItem="pbs-Ee-3FN" firstAttribute="top" secondItem="b64-d5-2kL" secondAttribute="top" id="TxF-FI-tGE"/>
+                            <constraint firstItem="4B5-wA-ETp" firstAttribute="trailing" secondItem="pbs-Ee-3FN" secondAttribute="trailing" identifier="ScrollViewID-5" id="hG3-cD-bg7"/>
+                            <constraint firstItem="pbs-Ee-3FN" firstAttribute="centerY" secondItem="b64-d5-2kL" secondAttribute="centerY" id="hc3-Rd-MoA"/>
+                            <constraint firstItem="4B5-wA-ETp" firstAttribute="top" secondItem="wGG-dR-nes" secondAttribute="bottom" priority="999" constant="60" identifier="ScrollViewID-6" id="iVp-pR-tje"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="4B5-wA-ETp" secondAttribute="bottom" priority="999" constant="-80" identifier="ScrollViewID-8" id="niR-10-TRU"/>
+                            <constraint firstItem="4B5-wA-ETp" firstAttribute="trailing" secondItem="pbs-Ee-3FN" secondAttribute="trailing" identifier="ScrollViewID-7" id="ufm-qK-bb3"/>
+                            <constraint firstItem="4B5-wA-ETp" firstAttribute="trailing" secondItem="pbs-Ee-3FN" secondAttribute="trailing" id="vxT-LI-9ar"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hc3-Rd-MoA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="productImageView" destination="Cm2-Tx-jJb" id="Vcn-bK-uJg"/>
+                        <outlet property="productNameLabel" destination="VKR-kq-MIJ" id="flL-hj-eHn"/>
+                        <outlet property="scrollView" destination="4B5-wA-ETp" id="eHr-pz-QZk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swm-oa-tR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-645" y="1166"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="ZgY-bT-J5F">
+            <objects>
+                <viewController storyboardIdentifier="PageViewController" id="08b-2l-73R" userLabel="Page View Controller" customClass="PageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NdL-87-D3Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="aWD-BP-ILH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GSj-NB-rhC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMB-Vm-xn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="625"/>
+        </scene>
+        <!--Product Category-->
+        <scene sceneID="vbL-cw-bz4">
+            <objects>
+                <viewController id="otF-6n-HDK" userLabel="Product Category" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aJf-jJ-dok"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dkn-MG-nGW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z5E-1Y-BjI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0S-WS-95R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="1335"/>
+        </scene>
+        <!--Page View Handler-->
+        <scene sceneID="nm4-Tw-J0N">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewHandler" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="A8N-Ij-6n8" userLabel="Page View Handler" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ggc-3x-WHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535" y="2252"/>
         </scene>
     </scenes>
     <resources>
+        <image name="BackArrow" width="14" height="26"/>
         <image name="MenuVacimage" width="72" height="72"/>
+        <image name="SimplicityCINCH.jpg" width="287" height="300"/>
     </resources>
 </document>

@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		101C66611C552D9900901778 /* ProductDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 101C665E1C552D9900901778 /* ProductDetail+CoreDataProperties.m */; };
 		101C66621C552D9900901778 /* ProductDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 101C66601C552D9900901778 /* ProductDetail.m */; };
+		105811801C5708E00065837C /* SimplicityVerve.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105811771C5708E00065837C /* SimplicityVerve.jpg */; };
+		105811811C5708E00065837C /* SimplicityJack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105811781C5708E00065837C /* SimplicityJack.jpg */; };
+		105811821C5708E00065837C /* MIELEFJMBAGS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105811791C5708E00065837C /* MIELEFJMBAGS.jpg */; };
+		105811831C5708E00065837C /* SimplicityCINCH.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1058117A1C5708E00065837C /* SimplicityCINCH.jpg */; };
+		105811841C5708E00065837C /* SimplicityJESSE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1058117B1C5708E00065837C /* SimplicityJESSE.jpg */; };
+		105811851C5708E00065837C /* MIELELLBAGS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1058117C1C5708E00065837C /* MIELELLBAGS.jpg */; };
+		105811861C5708E00065837C /* SimplicityMOXIE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1058117D1C5708E00065837C /* SimplicityMOXIE.jpg */; };
+		105811871C5708E00065837C /* MIELECANISTERATTACHMENTS.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1058117E1C5708E00065837C /* MIELECANISTERATTACHMENTS.JPG */; };
+		105811881C5708E00065837C /* SimplicitySNAP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1058117F1C5708E00065837C /* SimplicitySNAP.jpg */; };
+		10C6B28A1C5830F90082B4C1 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6B2891C5830F90082B4C1 /* PageViewController.m */; };
 		10DF5AD01C507E0600519A70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5ACF1C507E0600519A70 /* main.m */; };
 		10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AD21C507E0600519A70 /* AppDelegate.m */; };
 		10DF5AD61C507E0600519A70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AD51C507E0600519A70 /* ViewController.m */; };
@@ -18,6 +28,7 @@
 		10DF5AE11C507E0600519A70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DF5ADF1C507E0600519A70 /* LaunchScreen.storyboard */; };
 		10DF5AEC1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AEB1C507E0600519A70 /* VirginiaVacuums_Obj_cTests.m */; };
 		10DF5AF71C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AF61C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m */; };
+		10E9346B1C5558E70021B010 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E9346A1C5558E70021B010 /* ProductDetailViewController.m */; };
 		5E8FEFA31C51407200B5B4AC /* ServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FEFA21C51407200B5B4AC /* ServiceFactory.m */; };
 		5E8FEFA51C5140CA00B5B4AC /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FEFA41C5140CA00B5B4AC /* ProductData.json */; };
 /* End PBXBuildFile section */
@@ -44,6 +55,17 @@
 		101C665E1C552D9900901778 /* ProductDetail+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ProductDetail+CoreDataProperties.m"; path = "../ProductDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
 		101C665F1C552D9900901778 /* ProductDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductDetail.h; path = ../ProductDetail.h; sourceTree = "<group>"; };
 		101C66601C552D9900901778 /* ProductDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetail.m; path = ../ProductDetail.m; sourceTree = "<group>"; };
+		105811771C5708E00065837C /* SimplicityVerve.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimplicityVerve.jpg; sourceTree = "<group>"; };
+		105811781C5708E00065837C /* SimplicityJack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimplicityJack.jpg; sourceTree = "<group>"; };
+		105811791C5708E00065837C /* MIELEFJMBAGS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MIELEFJMBAGS.jpg; sourceTree = "<group>"; };
+		1058117A1C5708E00065837C /* SimplicityCINCH.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimplicityCINCH.jpg; sourceTree = "<group>"; };
+		1058117B1C5708E00065837C /* SimplicityJESSE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimplicityJESSE.jpg; sourceTree = "<group>"; };
+		1058117C1C5708E00065837C /* MIELELLBAGS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MIELELLBAGS.jpg; sourceTree = "<group>"; };
+		1058117D1C5708E00065837C /* SimplicityMOXIE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimplicityMOXIE.jpg; sourceTree = "<group>"; };
+		1058117E1C5708E00065837C /* MIELECANISTERATTACHMENTS.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MIELECANISTERATTACHMENTS.JPG; sourceTree = "<group>"; };
+		1058117F1C5708E00065837C /* SimplicitySNAP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimplicitySNAP.jpg; sourceTree = "<group>"; };
+		10C6B2881C5830F90082B4C1 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		10C6B2891C5830F90082B4C1 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 		10DF5ACB1C507E0600519A70 /* VirginiaVacuums-Obj-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VirginiaVacuums-Obj-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DF5ACF1C507E0600519A70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10DF5AD11C507E0600519A70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +83,8 @@
 		10DF5AF21C507E0600519A70 /* VirginiaVacuums-Obj-cUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VirginiaVacuums-Obj-cUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DF5AF61C507E0600519A70 /* VirginiaVacuums_Obj_cUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VirginiaVacuums_Obj_cUITests.m; sourceTree = "<group>"; };
 		10DF5AF81C507E0600519A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10E934691C5558E70021B010 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		10E9346A1C5558E70021B010 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
 		5E8FEFA11C51407200B5B4AC /* ServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceFactory.h; sourceTree = "<group>"; };
 		5E8FEFA21C51407200B5B4AC /* ServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceFactory.m; sourceTree = "<group>"; };
 		5E8FEFA41C5140CA00B5B4AC /* ProductData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
@@ -91,6 +115,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		105811761C5708CB0065837C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				105811771C5708E00065837C /* SimplicityVerve.jpg */,
+				105811781C5708E00065837C /* SimplicityJack.jpg */,
+				105811791C5708E00065837C /* MIELEFJMBAGS.jpg */,
+				1058117A1C5708E00065837C /* SimplicityCINCH.jpg */,
+				1058117B1C5708E00065837C /* SimplicityJESSE.jpg */,
+				1058117C1C5708E00065837C /* MIELELLBAGS.jpg */,
+				1058117D1C5708E00065837C /* SimplicityMOXIE.jpg */,
+				1058117E1C5708E00065837C /* MIELECANISTERATTACHMENTS.JPG */,
+				1058117F1C5708E00065837C /* SimplicitySNAP.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		10DF5AC21C507E0600519A70 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +165,7 @@
 		10DF5ACE1C507E0600519A70 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				105811761C5708CB0065837C /* Images */,
 				10DF5AE21C507E0600519A70 /* Info.plist */,
 				10DF5AD11C507E0600519A70 /* AppDelegate.h */,
 				10DF5AD21C507E0600519A70 /* AppDelegate.m */,
@@ -157,6 +198,10 @@
 			children = (
 				10DF5AD41C507E0600519A70 /* ViewController.h */,
 				10DF5AD51C507E0600519A70 /* ViewController.m */,
+				10E934691C5558E70021B010 /* ProductDetailViewController.h */,
+				10E9346A1C5558E70021B010 /* ProductDetailViewController.m */,
+				10C6B2881C5830F90082B4C1 /* PageViewController.h */,
+				10C6B2891C5830F90082B4C1 /* PageViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -289,9 +334,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DF5AE11C507E0600519A70 /* LaunchScreen.storyboard in Resources */,
+				105811811C5708E00065837C /* SimplicityJack.jpg in Resources */,
+				105811851C5708E00065837C /* MIELELLBAGS.jpg in Resources */,
 				10DF5ADE1C507E0600519A70 /* Images.xcassets in Resources */,
+				105811871C5708E00065837C /* MIELECANISTERATTACHMENTS.JPG in Resources */,
+				105811841C5708E00065837C /* SimplicityJESSE.jpg in Resources */,
+				105811861C5708E00065837C /* SimplicityMOXIE.jpg in Resources */,
 				10DF5AD91C507E0600519A70 /* Main.storyboard in Resources */,
 				5E8FEFA51C5140CA00B5B4AC /* ProductData.json in Resources */,
+				105811801C5708E00065837C /* SimplicityVerve.jpg in Resources */,
+				105811881C5708E00065837C /* SimplicitySNAP.jpg in Resources */,
+				105811831C5708E00065837C /* SimplicityCINCH.jpg in Resources */,
+				105811821C5708E00065837C /* MIELEFJMBAGS.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +372,9 @@
 			files = (
 				10DF5AD61C507E0600519A70 /* ViewController.m in Sources */,
 				10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */,
+				10C6B28A1C5830F90082B4C1 /* PageViewController.m in Sources */,
 				10DF5AD01C507E0600519A70 /* main.m in Sources */,
+				10E9346B1C5558E70021B010 /* ProductDetailViewController.m in Sources */,
 				101C66621C552D9900901778 /* ProductDetail.m in Sources */,
 				101C66611C552D9900901778 /* ProductDetail+CoreDataProperties.m in Sources */,
 				10DF5ADC1C507E0600519A70 /* VirginiaVacuums_Obj_c.xcdatamodeld in Sources */,

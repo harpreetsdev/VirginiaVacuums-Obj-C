@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ServiceFactory.h"
+#import "ProductDetailViewController.h"
+#import "PageViewController.h"
+
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 
