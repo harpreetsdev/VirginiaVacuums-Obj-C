@@ -40,6 +40,8 @@
     self.productImageView.image = prodImg;
     self.productNameLabel.text = [[[ServiceFactory sharedInstance] vacuumCleanerArray][self.productIndex] valueForKey:@"productDetailPageTitle"];
     self.productFeatureText.text = [[[ServiceFactory sharedInstance] vacuumCleanerArray][self.productIndex] valueForKey:@"productFeatureText"];
+    UIFont *font = [UIFont fontWithName:@"Helvetica Neue" size:18.0];
+    self.productFeatureText.font = font;
 }
 
 
