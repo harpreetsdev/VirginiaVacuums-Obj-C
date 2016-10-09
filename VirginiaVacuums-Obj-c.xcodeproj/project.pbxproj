@@ -18,6 +18,7 @@
 		105811861C5708E00065837C /* SimplicityMOXIE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1058117D1C5708E00065837C /* SimplicityMOXIE.jpg */; };
 		105811871C5708E00065837C /* MIELECANISTERATTACHMENTS.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1058117E1C5708E00065837C /* MIELECANISTERATTACHMENTS.JPG */; };
 		105811881C5708E00065837C /* SimplicitySNAP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1058117F1C5708E00065837C /* SimplicitySNAP.jpg */; };
+		10A539B11DAA9AF200EC6FC3 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A539B01DAA9AF200EC6FC3 /* InputViewController.swift */; };
 		10C6B28A1C5830F90082B4C1 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C6B2891C5830F90082B4C1 /* PageViewController.m */; };
 		10DF5AD01C507E0600519A70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5ACF1C507E0600519A70 /* main.m */; };
 		10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DF5AD21C507E0600519A70 /* AppDelegate.m */; };
@@ -64,6 +65,8 @@
 		1058117D1C5708E00065837C /* SimplicityMOXIE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimplicityMOXIE.jpg; sourceTree = "<group>"; };
 		1058117E1C5708E00065837C /* MIELECANISTERATTACHMENTS.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MIELECANISTERATTACHMENTS.JPG; sourceTree = "<group>"; };
 		1058117F1C5708E00065837C /* SimplicitySNAP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimplicitySNAP.jpg; sourceTree = "<group>"; };
+		10A539AF1DAA9AF200EC6FC3 /* VirginiaVacuums-Obj-c-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VirginiaVacuums-Obj-c-Bridging-Header.h"; sourceTree = "<group>"; };
+		10A539B01DAA9AF200EC6FC3 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		10C6B2881C5830F90082B4C1 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
 		10C6B2891C5830F90082B4C1 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 		10DF5ACB1C507E0600519A70 /* VirginiaVacuums-Obj-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VirginiaVacuums-Obj-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,12 +199,14 @@
 		5E8FEF9E1C513F2E00B5B4AC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				10A539B01DAA9AF200EC6FC3 /* InputViewController.swift */,
 				10DF5AD41C507E0600519A70 /* ViewController.h */,
 				10DF5AD51C507E0600519A70 /* ViewController.m */,
 				10E934691C5558E70021B010 /* ProductDetailViewController.h */,
 				10E9346A1C5558E70021B010 /* ProductDetailViewController.m */,
 				10C6B2881C5830F90082B4C1 /* PageViewController.h */,
 				10C6B2891C5830F90082B4C1 /* PageViewController.m */,
+				10A539AF1DAA9AF200EC6FC3 /* VirginiaVacuums-Obj-c-Bridging-Header.h */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				TargetAttributes = {
 					10DF5ACA1C507E0600519A70 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					10DF5AE61C507E0600519A70 = {
 						CreatedOnToolsVersion = 7.2;
@@ -371,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DF5AD61C507E0600519A70 /* ViewController.m in Sources */,
+				10A539B11DAA9AF200EC6FC3 /* InputViewController.swift in Sources */,
 				10DF5AD31C507E0600519A70 /* AppDelegate.m in Sources */,
 				10C6B28A1C5830F90082B4C1 /* PageViewController.m in Sources */,
 				10DF5AD01C507E0600519A70 /* main.m in Sources */,
@@ -519,10 +526,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "VirginiaVacuums-Obj-c/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HSR.VirginiaVacuums-Obj-c";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VirginiaVacuums-Obj-c/VirginiaVacuums-Obj-c-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -530,16 +541,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "VirginiaVacuums-Obj-c/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HSR.VirginiaVacuums-Obj-c";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VirginiaVacuums-Obj-c/VirginiaVacuums-Obj-c-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		10DF5AFF1C507E0600519A70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "VirginiaVacuums-Obj-cTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -552,6 +567,7 @@
 		10DF5B001C507E0600519A70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "VirginiaVacuums-Obj-cTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -564,6 +580,7 @@
 		10DF5B021C507E0600519A70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "VirginiaVacuums-Obj-cUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HSR.VirginiaVacuums-Obj-cUITests";
@@ -576,6 +593,7 @@
 		10DF5B031C507E0600519A70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "VirginiaVacuums-Obj-cUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HSR.VirginiaVacuums-Obj-cUITests";
